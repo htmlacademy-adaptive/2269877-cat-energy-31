@@ -1,0 +1,26 @@
+.categories__item--slim{
+  .categories__item--pro{
+    background-color: $background-color-grey;
+  }
+}
+.categories__item-title{
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: left;
+  color:$base-color-black;
+}
+.categories__description{
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color:$base-color-black;
+}
+.categories__link{
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color:$base-color-black;
+}
