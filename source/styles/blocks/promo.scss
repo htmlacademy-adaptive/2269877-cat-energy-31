@@ -1,0 +1,21 @@
+.promo{
+  font-family: "Oswald",sans-serif;
+  font-size: 20px;
+  color: $base-color-black;
+}
+.promo__title{
+  line-height: 60px;
+  text-align: left;
+}
+.promo__intro{
+  line-height: 20px;
+  text-align: left;
+
+}
+.promo__button{
+  line-height: 26px;
+  text-align: center;
+  color: $base-color-white;
+  background-color: $background-color-button-green;
+}
+
