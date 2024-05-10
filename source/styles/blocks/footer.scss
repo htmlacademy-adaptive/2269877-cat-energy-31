@@ -1,3 +1,33 @@
 .footer{
   background-color: $background-color-grey;
 }
+.socials__item{
+  position: relative;
+}
+.social__link--vk::after{
+  position: absolute;
+  content: "";
+  width: 28px;
+  height: 22px;
+  background-image: url("build/icons/stack.svg#vkontakte");
+  background-repeat: no-repeat;
+  background-size: 28px 22px;
+}
+.social__link--youtube::after{
+  position: absolute;
+  content: "";
+  width: 28px;
+  height: 22px;
+  background-image: url("build/icons/stack.svg#youtube");
+  background-repeat: no-repeat;
+  background-size: 28px 22px;
+}
+.social__link--telegram::after{
+  position: absolute;
+  content: "";
+  width: 28px;
+  height: 22px;
+  background-image: url("build/icons/stack.svg#telegram");
+  background-repeat: no-repeat;
+  background-size: 28px 22px;
+}

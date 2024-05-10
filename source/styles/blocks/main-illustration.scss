@@ -1,39 +1,100 @@
 .main-illustration__title{
   font-family: "Oswald", sans-serif;
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 36px;
+  line-height: 40px;
   text-align: center;
   color: $base-color-black;
+
+  @media (min-width: $tablet-width) and (min-width: $desktop-width){
+    font-family: "Oswald", sans-serif;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: $base-color-black;
+  }
 }
 .main-illustration__description{
   font-family: "Lato", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 18px;
   text-align: left;
   color: $base-color-text;
+
+  @media (min-width: $tablet-width) and (min-width: $desktop-width){
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    color: $base-color-text;
+  }
 }
 .main-illustration__label-number{
   font-family: "Oswald", sans-serif;
-  font-size: 30px;
-  line-height: 37px;
+  font-size: 24px;
+  line-height: 24px;
   text-align: center;
   color: $base-color-black;
+
+  @media (min-width: $tablet-width) and (min-width: $desktop-width){
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    color: $base-color-black;
+  }
 }
 .main-illustration__label-description{
   font-family: "Lato", sans-serif;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 12px;
+  line-height: 12px;
   text-align: center;
   color: $base-color-text;
+
+  @media (min-width: $tablet-width) and (min-width: $desktop-width){
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    color: $base-color-text;
+  }
 }
 .main-illustration__price{
   font-family: "Oswald", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 14px;
   line-height: 20px;
   text-align: center;
   color: $base-color-black;
+
+  @media (min-width: $tablet-width) and (min-width: $desktop-width){
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: $base-color-black;
+  }
 }
 .main-illustration__slides{
   background-color: $background-color-grey;
+  position: relative;
 }
+.main-illustration__button::after{
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 257px;
+  mask-image: url("build/icons/stack.svg#switch");
+  mask-repeat: no-repeat;
+  mask-size: 4px 257px;
+
+  @media (min-width: $tablet-width) and (min-width:$desktop-width) {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 280px;
+    mask-image: url("build/icons/stack.svg#switch");
+    mask-repeat: no-repeat;
+    mask-size: 4px 280px;
+  }
+
+}
+

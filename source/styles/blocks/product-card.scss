@@ -1,26 +1,71 @@
 .product-card{
   background-color: $background-color-grey;
+  position: relative;
+}
+.product--show-all::after{
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url("build/icons/stack.svg#plus");
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+
+  @media (min-width: $tablet-width) and (min-width: $desktop-width){
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-image: url("build/icons/stack.svg#plus");
+    background-repeat: no-repeat;
+    background-size: 60px 60px;
+  }
+
 }
 .product-card__title{
   font-family: "Oswald", sans-serif;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
   color: $base-color-product-card-title;
+
+  @media (min-width: $tablet-width) and (min-width: $desktop-width) {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: $base-color-product-card-title;
+  }
 }
 .product-card__text{
   font-family: "Lato", sans-serif;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 12px;
+  line-height: 16px;
   text-align: center;
   color:$base-color-text;
+
+  @media (min-width: $tablet-width) and (min-width: $desktop-width) {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: $base-color-text;
+  }
 }
 .product-card__option{
   font-family: "Lato", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 16px;
   text-align: center;
   color: $base-color-text;
+
+  @media (min-width: $tablet-width) and (min-width: $desktop-width){
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: $base-color-text;
+  }
 }
 .catalog__button{
   font-family: "Oswald",sans-serif;
@@ -28,6 +73,7 @@
   line-height: 20px;
   text-align: center;
   color: $base-color-white;
+  background-color:$background-color-green;
 }
 .product-card__button{
   font-family: "Oswald",sans-serif;
