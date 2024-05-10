@@ -1,16 +1,32 @@
 .subscribe__title{
   font-family: "Oswald", sans-serif;
-  font-size: 32px;
-  line-height: 32px;
+  font-size: 24px;
+  line-height: 24px;
   text-align: center;
   color: $base-color-black;
+
+  @media (min-width: $tablet-width) and (min-width: $desktop-width){
+    font-family: "Oswald", sans-serif;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: $base-color-black;
+  }
 }
 .subscribe__description{
   font-family: "Oswald",sans-serif;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 16px;
+  line-height: 24px;
   text-align: center;
   color: $base-color-black;
+
+  @media (min-width: $tablet-width) and (min-width: $desktop-width){
+    font-family: "Oswald",sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: $base-color-black;
+  }
 }
 .subscribe__input{
   font-family: "Oswald", sans-serif;
