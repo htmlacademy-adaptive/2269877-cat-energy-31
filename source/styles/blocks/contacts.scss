@@ -1,0 +1,23 @@
+.contacts__text{
+  font-family: $font-title;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  color: $base-color-dark;
+
+  @media (min-width: $tablet-width){
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+.contacts__address{
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+  color: $base-color-text;
+
+  @media (min-width: $tablet-width){
+    font-size: 16px;
+    text-align: right;
+  }
+}
