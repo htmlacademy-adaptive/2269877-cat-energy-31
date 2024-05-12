@@ -4,23 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <title>Название проекта</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="styles/styles.css">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <link href="styles/styles.css" rel="stylesheet">
   <!-- Подключение стилевого файла из папки 'vendor' -->
-  <link rel="stylesheet" href="vendor/normalize.css">
-  <script src="scripts/index.js" defer></script>
+  <link href="vendor/normalize.css" rel="stylesheet">
+  <script defer src="scripts/index.js"></script>
 </head>
 <body class="page__body">
 
 <header class="header">
   <a class="header__logo">
     <picture>
-      <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml"
-              srcset="images/icons/logotype-tablet.svg">
-      <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml"
-              srcset="images/icons/logotype-tablet.svg">
-      <img class="header__logo-image" src="images/icons/logo-mobile.svg" width="33" height="38" alt="Кот Энерджи.">
-
+      <source height="59" media="(min-width: 1440px)" srcset="images/icons/logotype-tablet.svg" type="image/svg+xml"
+              width="70">
+      <source height="50" media="(min-width: 768px)" srcset="images/icons/logotype-tablet.svg" type="image/svg+xml"
+              width="60">
+      <img alt="Кот Энерджи." class="header__logo-image" src="images/icons/logo-mobile.svg" width="33" height="38">
     </picture>
   </a>
   <nav class="main-nav">
@@ -53,25 +52,25 @@
     <h1 class="promo__title title-h1">Функциональное питание для котов.</h1>
     <p class="promo__intro">Занялся собой? Займись котом!</p>
     <picture>
-      <source media="(min-width: 1440px)" width="554" height="498" type="image/png"
-              srcset="images/hero-product-pc@1x.png 1x, images/hero-product-pc@2x.png 2x">
-      <source media="(min-width: 768px)" width="709" height="609" type="image/png"
-              srcset="images/hero-product-tablet@1x.png 1x, images/hero-product-tablet@2x.png 2x">
-      <img class="promo__image" src="images/hero-product-mobile@1x.png" srcset="images/hero-product-mobile@2x.png 2x"
-           width="280" height="270" alt="Баночка с питанием Кэт энерджи">
+      <source height="498" media="(min-width: 1440px)" srcset="images/hero-product-pc@1x.png 1x, images/hero-product-pc@2x.png 2x" type="image/png"
+              width="554">
+      <source height="609" media="(min-width: 768px)" srcset="images/hero-product-tablet@1x.png 1x, images/hero-product-tablet@2x.png 2x" type="image/png"
+              width="709">
+      <img alt="Баночка с питанием Кэт энерджи" class="promo__image" height="270"
+           src="images/hero-product-mobile@1x.png" srcset="images/hero-product-mobile@2x.png 2x" width="280">
     </picture>
     <a class="promo__button button button--primary button--lg" href="">Подобрать программу</a>
   </section>
   <section class="categories">
     <h2 class="visually-hidden">Каталог</h2>
     <ul class="categories__list">
-      <li class="categories__item--slim">
+      <li class="categories__item categories__item--slim">
         <p class="categories__item-title">Похудение</p>
         <p class="categories__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
           Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
         <a class="categories__link" href="catalog.html">Каталог Slim</a>
       </li>
-      <li class="categories__item--pro">
+      <li class="categories__item categories__item--pro">
         <p class="categories__item-title">Набор массы</p>
         <p class="categories__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
           Pro поможет вашему коту нарастить необходимые мышцы!</p>
@@ -124,18 +123,20 @@
     <div class="main-illustration__slides">
 
       <picture>
-        <source media="(min-width: 768px)" width="560" height="512" type="image/png"
-                srcset="images/cat-tablet-pc-before@1x.png 1x, images/cat-tablet-pc-before@2x.png 2x">
-        <img src="images/cat-mobile-before@1x.png" srcset="images/cat-mobile-before@2x.png 2x" width="280"
-             height="256" alt="Кот с лишним весом">
+        <source height="512" media="(min-width: 768px)" srcset="images/cat-tablet-pc-before@1x.png 1x, images/cat-tablet-pc-before@2x.png 2x" type="image/png"
+                width="560">
+        <img alt="Кот с лишним весом" height="256" src="images/cat-mobile-before@1x.png"
+             srcset="images/cat-mobile-before@2x.png 2x" width="280">
       </picture>
       <picture>
-        <source media="(min-width: 768px)" width="560" height="512" type="image/png"
-                srcset="images/cat-tablet-pc-after@1x.png 1x, images/cat-tablet-pc-after@2x.png 2x">
-        <img src="images/cat-mobile-after@1x.png" srcset="images/cat-mobile-after@2x.png 2x" width="280" height="256"
-             alt="Кот с нормальным весом">
+        <source height="512" media="(min-width: 768px)" srcset="images/cat-tablet-pc-after@1x.png 1x, images/cat-tablet-pc-after@2x.png 2x" type="image/png"
+                width="560">
+        <img alt="Кот с нормальным весом" height="256" src="images/cat-mobile-after@1x.png" srcset="images/cat-mobile-after@2x.png 2x"
+             width="280">
       </picture>
-
+      <button class="main-illustration__button" type="button">
+        <span class="visually-hidden">Передвинуть полосу слайдера</span>
+      </button>
     </div>
   </section>
   <section class="contacts">
@@ -144,33 +145,36 @@
     <address class="contacts__address"><span>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span></address>
     <div class="contacts__map">
       <picture>
-        <source media="(min-width: 1440px)" width="1440" height="400" type="image/png"
-                srcset="images/map-pc@1x.png 1x, images/map-pc@2x.png 2x">
-        <source media="(min-width: 768px)" width="768" height="400" type="image/png"
-                srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
-        <img src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362"
-             alt="Карта города для нахождения адреса Кэт энерджи">
+        <source height="400" media="(min-width: 1440px)" srcset="images/map-pc@1x.png 1x, images/map-pc@2x.png 2x" type="image/png"
+                width="1440">
+        <source height="400" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" type="image/png"
+                width="768">
+        <img alt="Карта города для нахождения адреса Кэт энерджи" height="362" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x"
+             width="320">
       </picture>
     </div>
   </section>
 </main>
 <footer class="footer">
-  <img class="footer__logo" width="" height="" alt="Логотип. Кот Энерджи." src="">
+
+  <img alt="Логотип. Кот Энерджи." class="footer__logo" width="128" height="24" src="/icons/footer-logo.svg">
   <ul class="footer__socials socials">
     <li class="socials__item">
-      <a href="https://vk.com/htmlacademy" class="socials__link social__link--vk" target="_blank"></a>
+      <a class="socials__link social__link--vk" href="https://vk.com/htmlacademy" target="_blank"></a>
       <span class="visually-hidden">Мы в Вконтакте</span>
     </li>
     <li class="socials__item">
-      <a href="https://www.youtube.com/user/htmlacademyru" class="socials__link social__link--youtube" target="_blank" rel="noreferrer noopener"></a>
+      <a class="socials__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" rel="noreferrer noopener"
+         target="_blank"></a>
       <span class="visually-hidden">Мы в Ютубе</span>
     </li>
     <li class="socials__item">
-      <a href="https://t.me/htmlacademy" class="socials__link social__link--telegram" target="_blank" rel="noreferrer noopener"></a>
+      <a class="socials__link social__link--telegram" href="https://t.me/htmlacademy" rel="noreferrer noopener"
+         target="_blank"></a>
       <span class="visually-hidden">Мы в Телеграме</span>
     </li>
   </ul>
-  <a class="developers" href="https://htmlacademy.ru" target="_blank" rel="noreferrer noopener">
+  <a class="developers" href="https://htmlacademy.ru" rel="noreferrer noopener" target="_blank">
     <span class="developers__title">HTML Academy</span>
     <span class="visually-hidden">Логотип html academy</span>
   </a>

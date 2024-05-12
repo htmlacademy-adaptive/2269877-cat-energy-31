@@ -252,7 +252,8 @@
           Заказать
         </a>
       </li>
-      <li class="catalog__item product-card">
+      <li class="catalog__item product-card product--show-all">
+
         <h2 class="product-card__title">Показать еще 100500 товаров</h2>
         <p class="product-card__text">На самом деле вкусов гораздо больше!</p>
         <a class="product-card__button button button--secondary" href="#">Показать всё</a>
@@ -296,6 +297,7 @@
       </li>
     </ul>
     <div class="additional-products__offer special-offer">
+      <span class="visually-hidden special-offer__icon">Иконка блока Спецпредложений.</span>
       <p class="special-offer__text">Закажите все и получите чехол для кота в подарок!</p>
     </div>
   </section>
@@ -325,21 +327,26 @@
   </section>
 </main>
 <footer class="footer">
-  <img class="footer__logo" width="" height="" alt="Логотип. Кот Энерджи." src="">
+  <img alt="Логотип. Кот Энерджи." class="footer__logo" width="128" height="24" src="/icons/footer-logo.svg">
   <ul class="footer__socials socials">
     <li class="socials__item">
-      <a href="" class="socials__link social__link--vk" target="_blank"></a>
+      <a class="socials__link social__link--vk" href="https://vk.com/htmlacademy" target="_blank"></a>
+      <span class="visually-hidden">Мы в Вконтакте</span>
     </li>
     <li class="socials__item">
-      <a class="socials__link social__link--youtube" target="_blank"></a>
+      <a class="socials__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" rel="noreferrer noopener"
+         target="_blank"></a>
+      <span class="visually-hidden">Мы в Ютубе</span>
     </li>
     <li class="socials__item">
-      <a class="socials__link social__link--telegram" target="_blank"></a>
+      <a class="socials__link social__link--telegram" href="https://t.me/htmlacademy" rel="noreferrer noopener"
+         target="_blank"></a>
+      <span class="visually-hidden">Мы в Телеграме</span>
     </li>
   </ul>
-  <a class="developers" href="https://htmlacademy.ru" target="_blank">
+  <a class="developers" href="https://htmlacademy.ru" rel="noreferrer noopener" target="_blank">
     <span class="developers__title">HTML Academy</span>
-    <img src="" alt="">
+    <span class="visually-hidden">Логотип html academy</span>
   </a>
 </footer>
 

@@ -1,18 +1,67 @@
 .benefits__item{
   background-color: $background-color-green;
+  position: relative;
 }
 .benefits__title{
-  font-family: "Oswald", sans-serif;
-  font-size: 60px;
-  line-height: 60px;
+  font-family: $font-title;
+  font-size: 36px;
+  line-height: 40px;
   text-align: center;
   color: $base-color-black;
+
+  @media (min-width: $tablet-width){
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 .benefits__text{
-  font-family: "Lato", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 18px;
   text-align: left;
   color: $base-color-text;
-}
 
+  @media (min-width: $tablet-width){
+  font-size: 16px;
+  line-height: 24px;
+  }
+}
+.benefits__item--healthy::after{
+  position: absolute;
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-image: url("../../icons/stack.svg#icon-leaf");
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  background-color: $background-color-green;
+}
+.benefits__item--fast::after{
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 29px;
+  background-image: url("../../icons/stack.svg#icon-powder");
+  background-size: 26px 29px;
+  background-repeat: no-repeat;
+  background-color: $background-color-green;
+}
+.benefits__item--functional::after{
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 30px;
+  background-image: url("../../icons/stack.svg#icon-eat");
+  background-size: 25px 30px;
+  background-repeat: no-repeat;
+  background-color: $background-color-green;
+}
+.benefits__item--productive::after{
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 31px;
+  background-image: url("../../icons/stack.svg#icon-scales");
+  background-size: 26px 31px;
+  background-repeat: no-repeat;
+  background-color: $background-color-green;
+}

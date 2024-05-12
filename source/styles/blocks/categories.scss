@@ -1,27 +1,104 @@
-.categories__item--slim{
-  .categories__item--pro{
+.categories__item--slim {
+  .categories__item--pro {
     background-color: $background-color-grey;
   }
 }
-.categories__item-title{
-  font-family: "Oswald", sans-serif;
-  font-size: 36px;
-  line-height: 36px;
+
+.categories__item-title {
+  font-family: $font-title;
+  font-size: 24px;
+  line-height: 37px;
   text-align: left;
-  color:$base-color-black;
+  color: $base-color-black;
+
+  @media (min-width: $tablet-width){
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
-.categories__description{
-  font-family: "Lato", sans-serif;
+
+.categories__description {
+  font-family: $font-title;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  color: $base-color-black;
+
+  @media (min-width: $tablet-width){
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+}
+
+.categories__item{
+  position: relative;
+}
+.categories__item--slim::after {
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 50px;
+  background-image: url("../../icons/stack.svg#cat-slim");
+  background-repeat: no-repeat;
+  background-size: 36px 50px;
+
+  @media (min-width: $tablet-width) {
+
+    width: 140px;
+    height: 194px;
+    background-size: 140px 194px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+    width: 70px;
+    height: 97px;
+    background-size: 70px 97px;
+  }
+
+}
+
+.categories__item--pro::after {
+  position: absolute;
+  content: "";
+  width: 67px;
+  height: 28px;
+  background-image: url("../../icons/stack.svg#cat-pro");
+  background-repeat: no-repeat;
+  background-size: 36px 50px;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 112px;
+    background-size: 268px 112px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 56px;
+    background-size: 134px 56px;
+  }
+}
+.categories__link {
+  font-family: $font-title;
   font-size: 16px;
-  line-height: 24px;
-  text-align: left;
-  color:$base-color-black;
-}
-.categories__link{
-  font-family: "Oswald", sans-serif;
-  font-size: 20px;
-  line-height: 30px;
+  line-height: 16px;
   text-align: center;
-  color:$base-color-black;
+  color: $base-color-black;
+
+  @media (min-width: $tablet-width){
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+.categories__link::after{
+  position: absolute;
+  content: "";
+  width: 32px;
+  height: 10px;
+  mask-image: url("../../icons/stack.svg#icon-arrow");
+  mask-repeat: no-repeat;
+  mask-size: 32px 10px;
 }
 

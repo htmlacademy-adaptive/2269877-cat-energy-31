@@ -1,39 +1,77 @@
 .main-illustration__title{
-  font-family: "Oswald", sans-serif;
-  font-size: 60px;
-  line-height: 60px;
+  font-family: $font-title;
+  font-size: 36px;
+  line-height: 40px;
   text-align: center;
   color: $base-color-black;
+
+  @media (min-width: $tablet-width){
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 .main-illustration__description{
-  font-family: "Lato", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 18px;
   text-align: left;
   color: $base-color-text;
+
+  @media (min-width: $tablet-width){
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 .main-illustration__label-number{
-  font-family: "Oswald", sans-serif;
-  font-size: 30px;
-  line-height: 37px;
+  font-family: $font-title;
+  font-size: 24px;
+  line-height: 24px;
   text-align: center;
   color: $base-color-black;
+
+  @media (min-width: $tablet-width){
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 .main-illustration__label-description{
   font-family: "Lato", sans-serif;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 12px;
+  line-height: 12px;
   text-align: center;
   color: $base-color-text;
+
+  @media (min-width: $tablet-width){
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 .main-illustration__price{
-  font-family: "Oswald", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
+  font-family: $font-title;
+  font-size: 14px;
   line-height: 20px;
   text-align: center;
   color: $base-color-black;
+
+  @media (min-width: $tablet-width){
+    font-size: 20px;
+  }
 }
 .main-illustration__slides{
   background-color: $background-color-grey;
+  position: relative;
 }
+.main-illustration__button::after{
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 257px;
+  mask-image: url("../../icons/stack.svg#switch");
+  mask-repeat: no-repeat;
+  mask-size: 4px 257px;
+
+  @media (min-width: $tablet-width){
+    height: 280px;
+    mask-size: 4px 280px;
+  }
+}
+
