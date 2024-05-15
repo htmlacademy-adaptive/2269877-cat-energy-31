@@ -1,5 +1,5 @@
 .product-card{
-  background-color: $background-color-grey;
+  background-color: $lightgrey;
   position: relative;
 }
 .product--show-all::after{
@@ -23,7 +23,7 @@
   font-size: 16px;
   line-height: 20px;
   text-align: left;
-  color: $base-color-product-card-title;
+  color: $charcoal-gray;
 
   @media (min-width: $tablet-width){
     font-size: 20px;
@@ -36,7 +36,7 @@
   font-size: 12px;
   line-height: 16px;
   text-align: center;
-  color:$base-color-text;
+  color:$gray;
 
   @media (min-width: $tablet-width){
     font-size: 16px;
@@ -48,7 +48,7 @@
   font-size: 12px;
   line-height: 16px;
   text-align: center;
-  color: $base-color-text;
+  color: $gray;
 
   @media (min-width: $tablet-width){
     font-size: 16px;
@@ -60,15 +60,15 @@
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: $base-color-white;
-  background-color:$background-color-green;
+  color: $white;
+  background-color:$green;
 }
 .product-card__button{
   font-family: $font-title;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: $base-color-text;
+  color: $gray;
 }
 
 

@@ -3,7 +3,7 @@
   font-size: 36px;
   line-height: 36px;
   text-align: left;
-  color: #000000;
+  color: $black;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -15,6 +15,6 @@
     font-size: 16px;
     line-height: 20px;
     text-align: center;
-    color: #ffffff;
-    background-color: $background-color-green;
+    color: $white;
+    background-color: $green;
 }

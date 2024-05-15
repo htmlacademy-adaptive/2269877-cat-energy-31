@@ -1,9 +1,17 @@
+.contacts__content{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
 .contacts__text{
+  margin:0;
   font-family: $font-title;
   font-size: 16px;
   line-height: 20px;
   text-align: left;
-  color: $base-color-dark;
+  color: $dark-gray;
+  text-transform: uppercase;
+
 
   @media (min-width: $tablet-width){
     font-size: 20px;
@@ -11,13 +19,17 @@
   }
 }
 .contacts__address{
+  font-style: normal;
   font-size: 14px;
   line-height: 20px;
   text-align: left;
-  color: $base-color-text;
+  color: $gray;
 
   @media (min-width: $tablet-width){
     font-size: 16px;
     text-align: right;
   }
+}
+.contacts__map{
+  max-width: 100%;
 }

@@ -1,15 +1,25 @@
+.categories{
+  display: flex;
+  flex-direction: column;
+}
+.categories__list{
+  min-width: 280px;
+  padding: 0;
+}
 .categories__item--slim {
   .categories__item--pro {
-    background-color: $background-color-grey;
+    background-color: $lightgrey;
   }
 }
 
 .categories__item-title {
+  margin: 0;
   font-family: $font-title;
+  text-transform: uppercase;
   font-size: 24px;
   line-height: 37px;
   text-align: left;
-  color: $base-color-black;
+  color: $black;
 
   @media (min-width: $tablet-width){
     font-size: 36px;
@@ -18,11 +28,15 @@
 }
 
 .categories__description {
-  font-family: $font-title;
+  border-bottom: 1px solid #d9d9d9;
+  grid-column: -1 / 1;
+  margin: 0;
+  padding: 22px 0;
+
   font-size: 14px;
   line-height: 18px;
   text-align: left;
-  color: $base-color-black;
+  color: $black;
 
   @media (min-width: $tablet-width){
     font-size: 16px;
@@ -32,16 +46,21 @@
 }
 
 .categories__item{
-  position: relative;
+
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  background-color: #f2f2f2;
 }
-.categories__item--slim::after {
-  position: absolute;
+
+.categories__item--slim::before {
+ display: block;
   content: "";
-  width: 36px;
-  height: 50px;
+  width: 50px;
+  height: 53px;
   background-image: url("../../icons/stack.svg#cat-slim");
   background-repeat: no-repeat;
-  background-size: 36px 50px;
+  background-size: 50px 53px;
 
   @media (min-width: $tablet-width) {
 
@@ -58,15 +77,17 @@
   }
 
 }
-
-.categories__item--pro::after {
-  position: absolute;
+.categories__item--slim{
+  padding-bottom: 20px;
+}
+.categories__item--pro::before {
+  display: block;
   content: "";
   width: 67px;
-  height: 28px;
+  height: 50px;
   background-image: url("../../icons/stack.svg#cat-pro");
   background-repeat: no-repeat;
-  background-size: 36px 50px;
+  background-size: 67px 50px;
 
   @media (min-width: $tablet-width) {
     width: 268px;
@@ -84,8 +105,9 @@
   font-family: $font-title;
   font-size: 16px;
   line-height: 16px;
-  text-align: center;
-  color: $base-color-black;
+  color: $black;
+  text-decoration: none;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width){
     font-size: 20px;
@@ -93,7 +115,7 @@
   }
 }
 .categories__link::after{
-  position: absolute;
+  display: block;
   content: "";
   width: 32px;
   height: 10px;

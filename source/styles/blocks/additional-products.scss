@@ -3,7 +3,7 @@
   font-size: 24px;
   line-height: 24px;
   text-align: center;
-  color: $base-color-black;
+  color: $black;
 
   @media (min-width: $tablet-width){
     font-size: 32px;
@@ -15,7 +15,7 @@
   font-size: 16px;
   line-height: 16px;
   text-align: center;
-  color: $base-color-product-card-title;
+  color: $charcoal-gray;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -28,7 +28,7 @@
     font-size: 14px;
     line-height: 14px;
     text-align: center;
-    color: $base-color-text;
+    color: $gray;
 
     @media (min-width: $tablet-width){
       font-size: 16px;

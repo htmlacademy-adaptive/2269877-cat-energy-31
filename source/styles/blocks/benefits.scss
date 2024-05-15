@@ -1,67 +1,69 @@
-.benefits__item{
-  background-color: $background-color-green;
-  position: relative;
+.benefits{
+  outline: 5px solid opacify(red, 0.5);
+  outline-offset: -5px;
+  min-width: 280px;
 }
+
 .benefits__title{
   font-family: $font-title;
   font-size: 36px;
   line-height: 40px;
   text-align: center;
-  color: $base-color-black;
+  color: $black;
+  padding-bottom: 25px;
 
   @media (min-width: $tablet-width){
     font-size: 60px;
     line-height: 60px;
   }
 }
+.benefits__list{
+  list-style: none;
+  flex-direction: column;
+  gap:20px;
+  margin:0;
+  padding:0;
+  display: flex;
+}
+.benefits__item{
+  display: flex;
+  gap:20px;
+}
 .benefits__text{
+  margin: 0;
   font-size: 14px;
   line-height: 18px;
   text-align: left;
-  color: $base-color-text;
+  color: $gray;
 
   @media (min-width: $tablet-width){
   font-size: 16px;
   line-height: 24px;
   }
 }
-.benefits__item--healthy::after{
-  position: absolute;
+.benefits__item::before{
+  display: block;
   content: "";
-  width: 32px;
-  height: 32px;
-  background-image: url("../../icons/stack.svg#icon-leaf");
-  background-size: 32px 32px;
+  background-position: center;
   background-repeat: no-repeat;
-  background-color: $background-color-green;
+  background-color: $green;
+  width: 60px;
+  height: 60px;
+  padding: 30px;
 }
-.benefits__item--fast::after{
-  position: absolute;
-  content: "";
-  width: 26px;
-  height: 29px;
+.benefits__item--healthy::before{
+  background-image: url("../../icons/stack.svg#icon-leaf");
+  background-size: 30px 32px;
+}
+.benefits__item--fast::before{
   background-image: url("../../icons/stack.svg#icon-powder");
   background-size: 26px 29px;
-  background-repeat: no-repeat;
-  background-color: $background-color-green;
 }
-.benefits__item--functional::after{
-  position: absolute;
-  content: "";
-  width: 25px;
-  height: 30px;
+.benefits__item--functional::before {
   background-image: url("../../icons/stack.svg#icon-eat");
   background-size: 25px 30px;
-  background-repeat: no-repeat;
-  background-color: $background-color-green;
 }
-.benefits__item--productive::after{
-  position: absolute;
-  content: "";
-  width: 26px;
-  height: 31px;
+.benefits__item--productive::before{
   background-image: url("../../icons/stack.svg#icon-scales");
   background-size: 26px 31px;
-  background-repeat: no-repeat;
-  background-color: $background-color-green;
 }
