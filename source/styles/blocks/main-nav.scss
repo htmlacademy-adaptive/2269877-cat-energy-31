@@ -1,23 +1,38 @@
+.main-nav__toggle::before{
+  display: block;
+  width: 24px;
+  height: 24px;
+  content: "";
+  margin-top: 18px;
+  background-image: url("../../icons/icon-toggle.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width:$tablet-width){
+    display: none;
+  }
+}
 .main-nav__list{
   margin: 0;
   padding: 0;
   list-style: none;
+  text-transform: uppercase;
+
 
   @media (min-width: $tablet-width){
-    display: flex;
-    min-width: 436px;
+    text-transform: uppercase;
     flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 436px;
+    padding: 0;
+    display: flex;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    min-width: 475px;
-    flex-wrap: wrap;
+    max-width: 475px;
   }
 }
 
 .main-nav__wrapper {
-    display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
     min-width: 279px;
@@ -39,16 +54,46 @@
         display: none;
       }
     }
+}
+.main-nav__wrapper--open{
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+  width: 100vw;
+  top: 130%;
+  left: 0;
+
+  @media (min-width:$tablet-width) {
+    background: none;
+    position: static;
+  }
+}
+/*.main-nav__wrapper:not(.main-nav__wrapper--open){
+  @media (max-width: $mobile-width-only){
+    display: none;
+  }
+}*/
+
+  .main-nav__item{
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    padding: 22px 0 24px;
+    text-align: center;
+
+    @media (min-width:$tablet-width) {
+      border: none;
+    }
   }
 
 .main-nav__link{
-
-  font-family: $font-title;
+  font-family: $font-title-second;
   font-size: 20px;
   line-height: 20px;
-  text-align: left;
+  text-align: center;
+  padding: 22px 0 24px;
   color: $black;
   text-decoration:none;
+  text-transform: uppercase;
 
 
   @media (min-width: $tablet-width) {
@@ -61,4 +106,17 @@
     line-height: 30px;
   }
 }
-
+/*
+.main-nav__link--active{
+  @media (min-width: $tablet-width) {
+    content: "";
+    background-color: #68b738;
+    width: 64px;
+    height: 2px;
+    display: inline-block;
+    position: absolute;
+    top: 46px;
+    left: 5px;
+  }
+}
+*/

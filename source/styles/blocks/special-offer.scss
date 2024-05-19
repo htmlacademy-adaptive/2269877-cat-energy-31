@@ -1,9 +1,8 @@
 .special-offer{
   background-color: $green;
-  position: relative;
 }
-.special-offer__icon::after{
-  position: absolute;
+.special-offer::after{
+  display: block;
   content: "";
   width: 78px;
   height: 80px;

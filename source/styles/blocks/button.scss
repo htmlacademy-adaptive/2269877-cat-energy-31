@@ -1,13 +1,26 @@
 .button--secondary{
   background-color: $lightgrey;
 }
-/*
-.button--primary{
-  font-family: "Oswald", sans-serif;
-  font-size: 20px;
-  line-height: 26px;
+
+.button{
+  font-family: $font-title-second;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 20px;
   text-align: center;
+
+  @media (min-width: $tablet-width){
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.button--primary{
+  display: block;
+  padding: 10px 44px;
   color: #ffffff;
   background-color: $green;
+  cursor: pointer;
 }
-*/
+

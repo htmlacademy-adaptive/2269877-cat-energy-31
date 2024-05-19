@@ -1,17 +1,5 @@
-.catalog__title {
-  font-family: $font-title;
-  font-size: 36px;
-  line-height: 36px;
-  text-align: left;
-  color: $black;
-
-  @media (min-width: $tablet-width) {
-    font-size: 60px;
-    line-height: 60px;
-  }
-}
 .catalog__button {
-    font-family: $font-title;
+    font-family: $font-title-second;
     font-size: 16px;
     line-height: 20px;
     text-align: center;

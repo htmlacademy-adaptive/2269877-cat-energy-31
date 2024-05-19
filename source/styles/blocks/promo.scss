@@ -1,18 +1,20 @@
 .promo{
   flex-direction: column;
-  font-family: $font-title;
+  font-family: $font-title-second;
   color: $white;
   background-color: $gray;
   text-align: center;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width){
-    color: $black;
+    position: relative;
+    padding: 0;
+    color: #000;
+    background: none;
+    background-color: #fff;
+    background-image: none;
   }
 
-  @media (min-width: $desktop-width){
-    color: $black;
-  }
 }
 .promo__title{
   font-size: 36px;
@@ -39,21 +41,11 @@
 
 }
 .promo__button{
-  padding: 10px 44px;
-  font-family: $font-title;
-  font-size: 16px;
-  text-transform: uppercase;
-  text-decoration: none;
-  line-height: 20px;
-  text-align: center;
-  color: white;
-  background-color: $green;
-  cursor: pointer;
-  display: block;
-
-  @media (min-width: $tablet-width){
-    font-size: 20px;
-    line-height: 26px;
+  @media (min-width:$tablet-width) {
+    content: "";
+    position: absolute;
+    top: 225px;
+    left: 68px;
   }
 }
 
