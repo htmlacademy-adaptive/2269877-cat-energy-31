@@ -1,11 +1,11 @@
 .benefits{
   outline: 5px solid opacify(red, 0.5);
   outline-offset: -5px;
-  min-width: 280px;
+  /*min-width: 280px;*/
 }
 
 .benefits__title{
-  font-family: $font-title;
+  font-family: $font-title-second;
   font-size: 36px;
   line-height: 40px;
   text-align: center;
@@ -13,17 +13,19 @@
   padding-bottom: 25px;
 
   @media (min-width: $tablet-width){
+    text-align: left;
     font-size: 60px;
     line-height: 60px;
   }
 }
 .benefits__list{
-  list-style: none;
-  flex-direction: column;
-  gap:20px;
-  margin:0;
-  padding:0;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  gap: 20px;
 }
 .benefits__item{
   display: flex;

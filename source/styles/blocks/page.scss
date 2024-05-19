@@ -8,4 +8,10 @@
     padding: 0 30px;
     overflow-x:hidden;
   }
+
+  @media (min-width:$desktop-width) {
+    max-width: 1440px;
+    padding: 0 110px;
+    overflow-x:hidden;
+  }
 }

@@ -1,5 +1,6 @@
 .button--secondary{
   background-color: $lightgrey;
+  color: #444444;
 }
 
 .button{
@@ -9,6 +10,9 @@
   text-decoration: none;
   line-height: 20px;
   text-align: center;
+  padding: 10px 20px;
+  max-width: 280px;
+  height: 40px;
 
   @media (min-width: $tablet-width){
     font-size: 20px;

@@ -5,6 +5,10 @@
 .categories__list{
   min-width: 280px;
   padding: 0;
+
+  @media (min-width:$desktop-width) {
+    display: flex;
+  }
 }
 
 
@@ -60,6 +64,11 @@
     padding: 81px 29px 53px 52px;
     display: grid;
   }
+
+  @media (min-width:$desktop-width) {
+    width: 570px;
+    margin-left: 30px;
+  }
 }
 .categories__item::before{
   @media (min-width:$tablet-width){
@@ -81,6 +90,11 @@
     background-size: 200px 211px;
   }
 
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 106px;
+    background-size: 100px 106px;
+  }
 }
 .categories__item--slim{
   padding-bottom: 20px;
@@ -98,6 +112,12 @@
     width: 268px;
     height: 200px;
     background-size: 268px 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 100px;
+    background-size: 134px 100px;
   }
 
 }
