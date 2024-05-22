@@ -1,3 +1,12 @@
+.additional-products{
+  margin-top: 25px;
+
+  @media (min-width:$desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 80px;
+  }
+}
 .additional-products__title{
   font-family: $font-title-second;
   font-size: 24px;
@@ -11,12 +20,28 @@
     font-size: 32px;
     line-height: 32px;
   }
+
+  @media (min-width:$desktop-width) {
+    display: block;
+    width: 100%;
+  }
 }
 .additional-products__list{
-  list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width:$desktop-width) {
+    flex: auto;
+  }
 }
 .additional-card{
   border-bottom: 1px solid #cdcdcd;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+  }
 }
 .additional-card__title{
   font-family: $font-title-second;
@@ -30,6 +55,8 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+
 }
 .additional-card__description{
   display: flex;

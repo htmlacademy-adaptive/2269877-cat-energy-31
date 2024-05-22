@@ -8,6 +8,7 @@
   font-size: 16px;
   line-height: 20px;
   display: flex;
+
 }
 .developers__title::after{
   display: block;
@@ -18,4 +19,8 @@
   mask-position: center;
   mask-repeat: no-repeat;
   background-color: #666;
+
+  @media (min-width:$tablet-width) {
+    margin-left: 23px;
+  }
 }

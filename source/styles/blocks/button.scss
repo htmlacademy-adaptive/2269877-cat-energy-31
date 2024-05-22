@@ -1,9 +1,5 @@
-.button--secondary{
-  background-color: $lightgrey;
-  color: #444444;
-}
-
 .button{
+  display: inline-block;
   font-family: $font-title-second;
   font-size: 16px;
   text-transform: uppercase;
@@ -11,20 +7,31 @@
   line-height: 20px;
   text-align: center;
   padding: 10px 20px;
-  max-width: 280px;
-  height: 40px;
+  cursor: pointer;
+  border: 0;
+  //min-width: 280px;
 
   @media (min-width: $tablet-width){
     font-size: 20px;
     line-height: 26px;
   }
+
+  &--lg{
+    min-height: 54px;
+    /*посчитать размер*/
+  }
+
+  &--secondary{
+    background-color: $lightgrey;
+    color: #444444;
+    width: 100%;
+  }
+
+  &--primary{
+    padding: 10px 44px;
+    color: #ffffff;
+    background-color: $green;
+  }
 }
 
-.button--primary{
-  display: block;
-  padding: 10px 44px;
-  color: #ffffff;
-  background-color: $green;
-  cursor: pointer;
-}
 

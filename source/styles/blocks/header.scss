@@ -1,34 +1,49 @@
+/*
+@media (min-width: $mobile-width-only){
+  .header{
+    display: grid;
+    grid-template-columns: 1fr 50px;
+  }
+  .header__logo{
+    display: grid;
+    grid-template-columns: 50px auto;
+  }
+}
+*/
+
 .header{
   position: relative;
   display: flex;
   justify-content: space-between;
+
 }
+
 .site-logo{
   display: flex;
   align-items: center;
 
 }
 .header__logo{
-  margin-top: 10px;
 
   @media (min-width: $tablet-width) {
     margin-top: 5px;
-    margin-right: 150px;
   }
 }
 .header__logo-image{
-  width: 33px;
-  height: 38px;
+  display: block;
 
   @media (min-width: $tablet-width){
     height: 60px;
     max-width: 50px;
   }
 }
+
 .header__logo--text{
   height:18px;
   width: 101px;
   align-items: center;
+
+
 
   @media (min-width: $tablet-width) {
     margin-left: 15px;

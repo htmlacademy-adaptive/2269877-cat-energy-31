@@ -1,3 +1,11 @@
+/*
+@media (min-width: $mobile-width-only){
+  .main-nav__toggle::before{
+    display: flex;
+    justify-content: end;
+  }
+}
+*/
 .main-nav__toggle::before{
   display: block;
   width: 24px;
@@ -14,22 +22,18 @@
 .main-nav__list{
   margin: 0;
   padding: 0;
+  gap: 33px;
   list-style: none;
   text-transform: uppercase;
 
 
   @media (min-width: $tablet-width){
     text-transform: uppercase;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 436px;
     padding: 0;
     display: flex;
   }
 
-  @media (min-width: $desktop-width) {
-    max-width: 475px;
-  }
+
 }
 
 .main-nav__wrapper {
@@ -38,28 +42,17 @@
     min-width: 279px;
 
     @media (min-width: $tablet-width) {
-      min-width: 704px;
-      flex-wrap: wrap;
 
       .main-nav__toggle{
         display: none;
       }
     }
 
-    @media (min-width: $desktop-width){
-      min-width: 1220px;
-      flex-wrap: wrap;
-
-      .main-nav__toggle{
-        display: none;
-      }
-    }
 }
 .main-nav__wrapper--open{
   position: absolute;
   z-index: 1;
   background-color: #fff;
-  width: 100vw;
   top: 130%;
   left: 0;
 

@@ -1,13 +1,17 @@
 
 .socials{
   display: flex;
+  gap: 20px;
   margin: 0 auto;
   padding: 20px 0;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 132px;
+  justify-content: center;
   list-style: none;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width:$tablet-width) {
+    border: none;
+  }
 }
 
 .socials__link::after{

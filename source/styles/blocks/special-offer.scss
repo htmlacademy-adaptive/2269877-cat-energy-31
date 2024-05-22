@@ -1,7 +1,15 @@
 .special-offer{
   background-color: $green;
+  min-width: 280px;
+  min-height: 200px;
+  padding: 59px 43px 60px;
+
+  @media (min-width:$tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
-.special-offer::after{
+.special-offer::before{
   display: block;
   content: "";
   width: 78px;
@@ -10,10 +18,14 @@
   background-repeat: no-repeat;
   background-size: 78px 80px;
 
+  margin: 0 auto 48px;
+
+
   @media (min-width: $tablet-width){
     width: 80px;
     height: 83px;
     background-size: 80px 83px;
+    margin: 57px 0 61px 73px;
   }
 }
 .special-offer__text{
@@ -21,4 +33,11 @@
   line-height: 20px;
   text-align: center;
   color:$white;
+
+  @media (min-width: $tablet-width){
+    text-align: left;
+    margin-top: 71px;
+    margin-right: 125px;
+    margin-bottom: 69px;
+  }
 }
