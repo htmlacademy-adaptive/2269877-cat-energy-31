@@ -1,27 +1,32 @@
-/*
-@media (min-width: $mobile-width-only){
+@media (min-width: 360px) and (max-width: 767px) {
   .header{
     display: grid;
     grid-template-columns: 1fr 50px;
   }
+
   .header__logo{
     display: grid;
-    grid-template-columns: 50px auto;
+    grid-template-columns: 110px auto;
+  }
+
+  .header__logo--text{
+    margin: 0 auto;
   }
 }
-*/
 
 .header{
-  position: relative;
   display: flex;
   justify-content: space-between;
+  position: relative;
 
 }
 
 .site-logo{
-  display: flex;
   align-items: center;
 
+  @media (min-width:$tablet-width) {
+    display: flex;
+  }
 }
 .header__logo{
 

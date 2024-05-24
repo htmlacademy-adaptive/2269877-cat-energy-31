@@ -29,6 +29,7 @@
   list-style-type: none;
 
   @media (min-width:$tablet-width) {
+    margin-top: 84px;
     grid-gap: 60px;
     grid-template-columns: 324px 324px;
     margin: 0 0 74px;
@@ -38,6 +39,7 @@
   @media (min-width:$desktop-width) {
     display: flex;
     flex-wrap: wrap;
+    max-width: 1220px;
   }
 }
 
@@ -51,5 +53,9 @@
   .product-card & {
     grid-area: footer;
 
+  }
+
+  @media (min-width:$desktop-width) {
+    min-width: 169px;
   }
 }

@@ -10,9 +10,9 @@
   <link href="vendor/normalize.css" rel="stylesheet">
   <script defer src="scripts/index.js"></script>
 </head>
-<body class="page__body container">
+<body class="page__body">
 
-<header class="header">
+<header class="header container">
   <a class="header__logo site-logo">
     <picture>
       <source height="59" media="(min-width: 1440px)" srcset="images/icons/logotype-tablet.svg" type="image/svg+xml"
@@ -50,7 +50,7 @@
 </header>
 <main class="main-container">
 
-  <section class="promo">
+  <section class="promo container">
     <h1 class="promo__title title-h1">Функциональное питание для котов.</h1>
     <p class="promo__intro">Занялся собой? Займись котом!</p>
     <picture>
@@ -63,7 +63,7 @@
     </picture>
     <a class="promo__button button button--primary button--lg" href="">Подобрать программу</a>
   </section>
-  <section class="categories">
+  <section class="categories container">
     <h2 class="visually-hidden">Каталог</h2>
     <ul class="categories__list">
       <li class="categories__item categories__item--slim">
@@ -81,7 +81,7 @@
       </li>
     </ul>
   </section>
-  <section class="benefits">
+  <section class="benefits container">
 
     <h2 class="benefits__title title-h2">Как это работает?</h2>
 
@@ -120,7 +120,8 @@
         <dt class="main-illustration__label-number"><span>60 дней</span></dt>
         <dd class="main-illustration__label-description">затрачено времени</dd>
       </div>
-      <p class="main-illustration__price"><span>Затраты на питание: 15 000 РУБ.</span></p>
+      <p class="main-illustration__price"><span>Затраты на питание:</span>
+        <span> 15 000 РУБ.</span></p>
     </div>
 
     <div class="main-illustration__slides">
@@ -128,13 +129,13 @@
       <picture>
         <source height="512" media="(min-width: 768px)" srcset="images/cat-tablet-pc-before@1x.png 1x, images/cat-tablet-pc-before@2x.png 2x" type="image/png"
                 width="560">
-        <img alt="Кот с лишним весом" height="256" src="images/cat-mobile-before@1x.png"
+        <img alt="Кот с лишним весом" class="main-illustration__image slider__image slider__image--state-before" height="256" src="images/cat-mobile-before@1x.png"
              srcset="images/cat-mobile-before@2x.png 2x" width="280">
       </picture>
       <picture>
         <source height="512" media="(min-width: 768px)" srcset="images/cat-tablet-pc-after@1x.png 1x, images/cat-tablet-pc-after@2x.png 2x" type="image/png"
                 width="560">
-        <img alt="Кот с нормальным весом" height="256" src="images/cat-mobile-after@1x.png" srcset="images/cat-mobile-after@2x.png 2x"
+        <img alt="Кот с нормальным весом" class="main-illustration__image slider__image slider__image--state-after" height="256" src="images/cat-mobile-after@1x.png" srcset="images/cat-mobile-after@2x.png 2x"
              width="280">
       </picture>
       <button class="main-illustration__button" type="button">

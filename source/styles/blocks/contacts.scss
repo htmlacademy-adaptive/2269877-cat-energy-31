@@ -6,6 +6,16 @@
   @media (min-width:$tablet-width) {
     padding: 60px 70px;
   }
+
+  @media (min-width:$desktop-width) {
+    position: absolute;
+    z-index: 1;
+    min-width: 565px;
+    background-color: $white;
+    margin-top: 95px;
+    margin-left: 110px;
+
+  }
 }
 .contacts__text{
   margin:0;
@@ -36,6 +46,10 @@
 }
 .contacts__map{
   max-width: 100%;
+
+  @media (min-width:$desktop-width) {
+    position: relative;
+  }
 }
 .contacts__map--img{
   max-width: 100%;

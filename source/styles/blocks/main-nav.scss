@@ -1,11 +1,11 @@
-/*
-@media (min-width: $mobile-width-only){
+
+@media (min-width: 360px) and (max-width: 767px){
   .main-nav__toggle::before{
     display: flex;
     justify-content: end;
   }
 }
-*/
+
 .main-nav__toggle::before{
   display: block;
   width: 24px;
@@ -55,6 +55,7 @@
   background-color: #fff;
   top: 130%;
   left: 0;
+  width: 100%;
 
   @media (min-width:$tablet-width) {
     background: none;
