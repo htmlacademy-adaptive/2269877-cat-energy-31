@@ -57,6 +57,7 @@
 
   @media (min-width: $desktop-width) {
     grid-area: 2 / 1 / 3 / 3;
+    margin-bottom: 23px;
   }
 }
 
@@ -70,7 +71,7 @@
   @media (min-width: $tablet-width) {
     min-height: 372px;
     padding: 81px 29px 53px 52px;
-    display: grid;
+    align-items: center;
   }
 
 }
@@ -105,9 +106,7 @@
     background-size: 100px 106px;
   }
 }
-.categories__item--slim{
-  padding-bottom: 20px;
-}
+
 .categories__item--pro::before {
   display: block;
   content: "";
@@ -143,6 +142,7 @@
     line-height: 30px;
     grid-area: 3 / 1 / 4 / 2;
     padding: 0;
+    margin: auto;
   }
 }
 .categories__link::after{

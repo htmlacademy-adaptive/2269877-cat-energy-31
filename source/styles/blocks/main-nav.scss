@@ -1,18 +1,16 @@
-
-@media (min-width: 360px) and (max-width: 767px){
-  .main-nav__toggle::before{
-    display: flex;
-    justify-content: end;
-  }
+.main-nav__toggle{
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
 }
-
 .main-nav__toggle::before{
   display: block;
   width: 24px;
   height: 24px;
   content: "";
-  margin-top: 18px;
-  background-image: url("../../icons/icon-toggle.svg");
+  background-image: url("../../icons/mobile-close.svg");
   background-repeat: no-repeat;
 
   @media (min-width:$tablet-width){

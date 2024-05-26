@@ -13,7 +13,7 @@
 <body class="page__body">
 
 <header class="header container">
-  <a class="header__logo site-logo">
+  <a href="#" class="header__logo site-logo">
     <picture>
       <source height="59" media="(min-width: 1440px)" srcset="images/icons/logotype-tablet.svg" type="image/svg+xml"
               width="70">
@@ -25,7 +25,7 @@
   </a>
 
   <nav class="main-nav">
-    <a href="#" class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></a>
+    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <div class="main-nav__wrapper main-nav__wrapper--open">
 
       <ul class="main-nav__list">
@@ -35,12 +35,12 @@
           </a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="catalog.html" target="_blank">
+          <a class="main-nav__link" href="catalog.html">
             Каталог продукции
           </a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#" target="_blank">
+          <a class="main-nav__link" href="#">
             Подбор продукции
           </a>
         </li>
@@ -50,18 +50,20 @@
 </header>
 <main class="main-container">
 
-  <section class="promo container">
-    <h1 class="promo__title title-h1">Функциональное питание для котов.</h1>
-    <p class="promo__intro">Занялся собой? Займись котом!</p>
-    <picture>
-      <source height="498" media="(min-width: 1440px)" srcset="images/hero-product-pc@1x.png 1x, images/hero-product-pc@2x.png 2x" type="image/png"
-              width="554">
-      <source height="609" media="(min-width: 768px)" srcset="images/hero-product-tablet@1x.png 1x, images/hero-product-tablet@2x.png 2x" type="image/png"
-              width="709">
-      <img alt="Баночка с питанием Кэт энерджи" class="promo__image" height="270"
-           src="images/hero-product-mobile@1x.png" srcset="images/hero-product-mobile@2x.png 2x" width="280">
-    </picture>
-    <a class="promo__button button button--primary button--lg" href="">Подобрать программу</a>
+  <section class="promo">
+    <div class="promo__container container">
+      <h1 class="promo__title title-h1">Функциональное питание для котов.</h1>
+      <p class="promo__intro">Занялся собой? Займись котом!</p>
+      <picture>
+        <source height="498" media="(min-width: 1440px)" srcset="images/hero-product-pc@1x.png 1x, images/hero-product-pc@2x.png 2x" type="image/png"
+                width="554">
+        <source height="609" media="(min-width: 768px)" srcset="images/hero-product-tablet@1x.png 1x, images/hero-product-tablet@2x.png 2x" type="image/png"
+                width="709">
+        <img alt="Баночка с питанием Кэт энерджи" class="promo__image" height="270"
+             src="images/hero-product-mobile@1x.png" srcset="images/hero-product-mobile@2x.png 2x" width="280">
+      </picture>
+      <a class="promo__button button button--primary button--lg" href="">Подобрать программу</a>
+    </div>
   </section>
   <section class="categories container">
     <h2 class="visually-hidden">Каталог</h2>
@@ -162,28 +164,31 @@
   </section>
 </main>
 <footer class="footer">
-  <a class="footer__logo" href="index.html">
-    <img src="images/footer-logo.svg" width="128" height="24" alt="Логотип. Кэт Энерджи.">
-  </a>
-  <ul class="footer__socials socials">
-    <li class="socials__item">
-      <a class="socials__link social__link--vk" href="https://vk.com/htmlacademy" target="_blank"></a>
-      <span class="visually-hidden">Мы в Вконтакте</span>
-    </li>
-    <li class="socials__item">
-      <a class="socials__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" rel="noreferrer noopener"
-         target="_blank"></a>
-      <span class="visually-hidden">Мы в Ютубе</span>
-    </li>
-    <li class="socials__item">
-      <a class="socials__link social__link--telegram" href="https://t.me/htmlacademy" rel="noreferrer noopener"
-         target="_blank"></a>
-      <span class="visually-hidden">Мы в Телеграме</span>
-    </li>
-  </ul>
-  <a class="developers" href="https://htmlacademy.ru" rel="noreferrer noopener" target="_blank">
-    <span class="developers__title">HTML Academy</span>
-  </a>
+  <div class="footer__container container">
+    <a class="footer__logo" href="index.html">
+      <img alt="Логотип. Кэт Энерджи." height="24" src="images/footer-logo.svg" width="128">
+    </a>
+    <ul class="footer__socials socials">
+      <li class="socials__item">
+        <a class="socials__link social__link--vk" href="https://vk.com/htmlacademy" target="_blank"></a>
+        <span class="visually-hidden">Мы в Вконтакте</span>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
+           rel="noreferrer noopener"
+           target="_blank"></a>
+        <span class="visually-hidden">Мы в Ютубе</span>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link social__link--telegram" href="https://t.me/htmlacademy" rel="noreferrer noopener"
+           target="_blank"></a>
+        <span class="visually-hidden">Мы в Телеграме</span>
+      </li>
+    </ul>
+    <a class="developers" href="https://htmlacademy.ru" rel="noreferrer noopener" target="_blank">
+      <span class="developers__title">HTML Academy</span>
+    </a>
+  </div>
 </footer>
 </body>
 </html>
