@@ -50,7 +50,7 @@
 </header>
 <main class="main-container">
 
-  <section class="promo">
+  <section class="promo promo__img-overlay">
     <div class="promo__container container">
       <h1 class="promo__title title-h1">Функциональное питание для котов.</h1>
       <p class="promo__intro">Занялся собой? Займись котом!</p>
@@ -109,40 +109,42 @@
     </ul>
   </section>
   <section class="main-illustration">
-    <p class="main-illustration__title title-h2">Живой пример</p>
-    <p class="main-illustration__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
-      Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
-      спит по 16 часов в день. </p>
-    <div class="main-illustration__row">
-      <div class="main-illustration__label">
-        <p class="main-illustration__label-number"><span>5 кг</span></p>
-        <p class="main-illustration__label-description">cнижение веса</p>
+    <div class="main-illustration__container container">
+      <p class="main-illustration__title title-h2">Живой пример</p>
+      <p class="main-illustration__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
+        Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
+        спит по 16 часов в день. </p>
+      <div class="main-illustration__row">
+        <div class="main-illustration__label">
+          <p class="main-illustration__label-number"><span>5 кг</span></p>
+          <p class="main-illustration__label-description">cнижение веса</p>
+        </div>
+        <div class="main-illustration__label">
+          <dt class="main-illustration__label-number"><span>60 дней</span></dt>
+          <dd class="main-illustration__label-description">затрачено времени</dd>
+        </div>
+        <p class="main-illustration__price"><span>Затраты на питание:</span>
+          <span> 15 000 РУБ.</span></p>
       </div>
-      <div class="main-illustration__label">
-        <dt class="main-illustration__label-number"><span>60 дней</span></dt>
-        <dd class="main-illustration__label-description">затрачено времени</dd>
+
+      <div class="main-illustration__slides">
+
+        <picture>
+          <source height="512" media="(min-width: 768px)" srcset="images/cat-tablet-pc-before@1x.png 1x, images/cat-tablet-pc-before@2x.png 2x" type="image/png"
+                  width="560">
+          <img alt="Кот с лишним весом" class="main-illustration__image slider__image slider__image--state-before" height="256" src="images/cat-mobile-before@1x.png"
+               srcset="images/cat-mobile-before@2x.png 2x" width="280">
+        </picture>
+        <picture>
+          <source height="512" media="(min-width: 768px)" srcset="images/cat-tablet-pc-after@1x.png 1x, images/cat-tablet-pc-after@2x.png 2x" type="image/png"
+                  width="560">
+          <img alt="Кот с нормальным весом" class="main-illustration__image slider__image slider__image--state-after" height="256" src="images/cat-mobile-after@1x.png" srcset="images/cat-mobile-after@2x.png 2x"
+               width="280">
+        </picture>
+        <button class="main-illustration__button" type="button">
+          <span class="visually-hidden">Передвинуть полосу слайдера</span>
+        </button>
       </div>
-      <p class="main-illustration__price"><span>Затраты на питание:</span>
-        <span> 15 000 РУБ.</span></p>
-    </div>
-
-    <div class="main-illustration__slides">
-
-      <picture>
-        <source height="512" media="(min-width: 768px)" srcset="images/cat-tablet-pc-before@1x.png 1x, images/cat-tablet-pc-before@2x.png 2x" type="image/png"
-                width="560">
-        <img alt="Кот с лишним весом" class="main-illustration__image slider__image slider__image--state-before" height="256" src="images/cat-mobile-before@1x.png"
-             srcset="images/cat-mobile-before@2x.png 2x" width="280">
-      </picture>
-      <picture>
-        <source height="512" media="(min-width: 768px)" srcset="images/cat-tablet-pc-after@1x.png 1x, images/cat-tablet-pc-after@2x.png 2x" type="image/png"
-                width="560">
-        <img alt="Кот с нормальным весом" class="main-illustration__image slider__image slider__image--state-after" height="256" src="images/cat-mobile-after@1x.png" srcset="images/cat-mobile-after@2x.png 2x"
-             width="280">
-      </picture>
-      <button class="main-illustration__button" type="button">
-        <span class="visually-hidden">Передвинуть полосу слайдера</span>
-      </button>
     </div>
   </section>
   <section class="contacts">

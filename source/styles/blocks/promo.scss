@@ -1,12 +1,13 @@
 .promo{
+  display: block;
   flex-direction: column;
   font-family: $font-title-second;
   color: $white;
-  background-color: $gray;
   text-align: center;
   margin-bottom: 20px;
- background-image: url("../images/promo.png");
+  background-image:linear-gradient(rgba(104, 183, 56, 0.85),rgba(104, 183, 56, 0.85)), url("../../images/index-background.png");
   background-repeat: no-repeat;
+  background-size: 100% 58%;
 
 
   @media (min-width: $tablet-width){
@@ -15,16 +16,27 @@
     color: #000;
     background: none;
     background-color: #fff;
-    background-image: none;
   }
+
+  @media (min-width:$desktop-width){
+    background-image:linear-gradient(rgba(104, 183, 56, 0.85),rgba(104, 183, 56, 0.85)), url("../../images/index-background.png");
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    background-position: right top;
+    top: 0;
+  }
+}
+.promo::before{
 
 }
 .promo__title{
+  color: $white;
   font-size: 36px;
   line-height: 36px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    color: $black;
     font-size: 60px;
     line-height: 60px;
     text-align: left;
@@ -35,7 +47,7 @@
   font-size: 14px;
   line-height: 14px;
   text-align: center;
-
+  text-transform: uppercase;
   @media (min-width: $tablet-width){
     font-size: 20px;
     line-height: 20px;

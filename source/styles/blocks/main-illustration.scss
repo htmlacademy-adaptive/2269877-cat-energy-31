@@ -1,11 +1,13 @@
 .main-illustration{
   background-color: #EAEAEA;
+
+}
+.main-illustration__container{
   @media (min-width:$desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
-
 .main-illustration__description{
   font-size: 14px;
   line-height: 18px;
@@ -29,6 +31,7 @@
   @media (min-width:$desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 75px;
   }
 }
 .main-illustration__label{
