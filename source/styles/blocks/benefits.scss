@@ -1,3 +1,4 @@
+
 .benefits__title{
   font-family: $font-title-second;
   font-size: 36px;
@@ -42,6 +43,7 @@
     max-height: 280px;
     display: grid;
     gap: 30px;
+    position: relative;
   }
 }
 .benefits__text{
@@ -89,4 +91,27 @@
 .benefits__item--productive::before{
   background-image: url("../../icons/stack.svg#icon-scales");
   background-size: 26px 31px;
+}
+@media (width >= 768px) {
+  .benefits__list{
+    counter-reset: test;
+  }
+  .benefits__list .benefits__item::after {
+    counter-increment: test;
+    content: counter(test);
+    color: #f2f2f2;
+    z-index: -1;
+    width: 132px;
+    font-family: $font-title-second;
+    font-size: 270px;
+    font-weight: 400;
+    line-height: 280px;
+    display: inline-block;
+    position: absolute;
+    top: -43px;
+    right: 0;
+  }
+  .benefits__item:not(:nth-last-child(-n+2)) {
+    margin-bottom: 37px;
+  }
 }

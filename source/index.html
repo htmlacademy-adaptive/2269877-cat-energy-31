@@ -13,15 +13,15 @@
 <body class="page__body">
 
 <header class="header container">
-  <a href="#" class="header__logo site-logo">
+  <a class="header__logo site-logo" href="#">
     <picture>
       <source height="59" media="(min-width: 1440px)" srcset="images/icons/logotype-tablet.svg" type="image/svg+xml"
               width="70">
       <source height="50" media="(min-width: 768px)" srcset="images/icons/logotype-tablet.svg" type="image/svg+xml"
               width="60">
-      <img alt="Кот Энерджи." class="header__logo-image" src="images/icons/logo-mobile.svg" width="33" height="38">
+      <img alt="Кот Энерджи." class="header__logo-image" height="38" src="images/icons/logo-mobile.svg" width="33">
     </picture>
-    <img alt="Кот Энерджи." class="header__logo--text" src="images/icons/logo-text.svg" width="101" height="18">
+    <img alt="Кот Энерджи." class="header__logo--text" height="18" src="images/icons/logo-text.svg" width="101">
   </a>
 
   <nav class="main-nav">
@@ -54,15 +54,17 @@
     <div class="promo__container container">
       <h1 class="promo__title title-h1">Функциональное питание для котов.</h1>
       <p class="promo__intro">Занялся собой? Займись котом!</p>
+      <a class="promo__button button button--primary button--lg" href="">Подобрать программу</a>
       <picture>
-        <source height="498" media="(min-width: 1440px)" srcset="images/hero-product-pc@1x.png 1x, images/hero-product-pc@2x.png 2x" type="image/png"
+        <source height="498" media="(min-width: 1200px)"
+                srcset="images/hero-product-pc@1x.png 1x, images/hero-product-pc@2x.png 2x" type="image/png"
                 width="554">
-        <source height="609" media="(min-width: 768px)" srcset="images/hero-product-tablet@1x.png 1x, images/hero-product-tablet@2x.png 2x" type="image/png"
+        <source height="609" media="(min-width: 768px)"
+                srcset="images/hero-product-tablet@1x.png 1x, images/hero-product-tablet@2x.png 2x" type="image/png"
                 width="709">
         <img alt="Баночка с питанием Кэт энерджи" class="promo__image" height="270"
              src="images/hero-product-mobile@1x.png" srcset="images/hero-product-mobile@2x.png 2x" width="280">
       </picture>
-      <a class="promo__button button button--primary button--lg" href="">Подобрать программу</a>
     </div>
   </section>
   <section class="categories container">
@@ -85,7 +87,7 @@
   </section>
   <section class="benefits container">
 
-    <h2 class="benefits__title title-h2">Как это работает?</h2>
+    <h2 class="benefits__title title-h2">Как это работает</h2>
 
     <ul class="benefits__list">
       <li class="benefits__item benefits__item--healthy">
@@ -130,15 +132,19 @@
       <div class="main-illustration__slides">
 
         <picture>
-          <source height="512" media="(min-width: 768px)" srcset="images/cat-tablet-pc-before@1x.png 1x, images/cat-tablet-pc-before@2x.png 2x" type="image/png"
+          <source height="512" media="(min-width: 768px)"
+                  srcset="images/cat-tablet-pc-before@1x.png 1x, images/cat-tablet-pc-before@2x.png 2x" type="image/png"
                   width="560">
-          <img alt="Кот с лишним весом" class="main-illustration__image slider__image slider__image--state-before" height="256" src="images/cat-mobile-before@1x.png"
+          <img alt="Кот с лишним весом" class="main-illustration__image slider__image slider__image--state-before"
+               height="256" src="images/cat-mobile-before@1x.png"
                srcset="images/cat-mobile-before@2x.png 2x" width="280">
         </picture>
         <picture>
-          <source height="512" media="(min-width: 768px)" srcset="images/cat-tablet-pc-after@1x.png 1x, images/cat-tablet-pc-after@2x.png 2x" type="image/png"
+          <source height="512" media="(min-width: 768px)"
+                  srcset="images/cat-tablet-pc-after@1x.png 1x, images/cat-tablet-pc-after@2x.png 2x" type="image/png"
                   width="560">
-          <img alt="Кот с нормальным весом" class="main-illustration__image slider__image slider__image--state-after" height="256" src="images/cat-mobile-after@1x.png" srcset="images/cat-mobile-after@2x.png 2x"
+          <img alt="Кот с нормальным весом" class="main-illustration__image slider__image slider__image--state-after"
+               height="256" src="images/cat-mobile-after@1x.png" srcset="images/cat-mobile-after@2x.png 2x"
                width="280">
         </picture>
         <button class="main-illustration__button" type="button">
@@ -150,18 +156,25 @@
   <section class="contacts">
     <div class="contacts__content">
       <p class="contacts__text">Приглашаем<br> к сотрудничеству<br> дилеров!</p>
-      <address class="contacts__address"><span>ул. Большая<br> Конюшенная, д. 19/8<br><br> Санкт-Петербург</span></address>
+      <address class="contacts__address"><span>ул. Большая<br> Конюшенная, д. 19/8<br><br> Санкт-Петербург</span>
+      </address>
     </div>
     <div class="contacts__map">
-      <picture>
-        <source height="400" media="(min-width: 1440px)" srcset="images/map-pc@1x.png 1x, images/map-pc@2x.png 2x" type="image/png"
-                width="1440">
-        <source height="400" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" type="image/png"
-                width="768">
-        <img class="contacts__map--img"
-          alt="Карта города для нахождения адреса Кэт энерджи"  src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x"
-             width="320" height="362">
-      </picture>
+      <noscript>
+        <picture>
+          <source height="400" media="(min-width: 1200px)"
+                  srcset="images/location-pc.png 1x, images/location-pc@2x.png 2x" type="image/png"
+                  width="1200">
+          <source height="400" media="(min-width: 768px)"
+                  srcset="images/location-tablet.png 1x, images/location-mobile@2x.png 2x" type="image/png"
+                  width="768">
+          <img alt="Карта города для нахождения адреса Кэт энерджи"
+               class="contacts__map--img" height="362"
+               src="images/location-mobile.png"
+               srcset="images/location-mobile@2x.png 2x" width="320">
+        </picture>
+      </noscript>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.822607321338!2d30.317408900000004!3d59.968266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sat!4v1716485953562!5m2!1sru!2sat" allowfullscreen="" loading=" lazy" referrerpolicy="no-referrer-when-downgrade">width="320" height="362" title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
     </div>
   </section>
 </main>

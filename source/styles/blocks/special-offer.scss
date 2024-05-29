@@ -1,18 +1,29 @@
 .special-offer{
   background-color: $green;
   min-width: 280px;
-  min-height: 200px;
+  min-height: 290px;
   padding: 59px 43px 60px;
+  background-image:linear-gradient(rgba(104, 183, 56, 0.85),rgba(104, 183, 56, 0.85)), url("../../images/offer-background-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
 
   @media (min-width:$tablet-width) {
     display: flex;
     justify-content: space-between;
+    background-image:linear-gradient(rgba(104, 183, 56, 0.85),rgba(104, 183, 56, 0.85)), url("../../images/offer-background-tablet.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
 
     @media (min-width:$desktop-width) {
+
       align-items: center;
       flex-direction: column;
+      background-image:linear-gradient(rgba(104, 183, 56, 0.85),rgba(104, 183, 56, 0.85)), url("../../images/offer-background-pc.png");
+      background-repeat: no-repeat;
+      background-size: cover;
     }
 
 }

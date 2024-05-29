@@ -113,6 +113,10 @@
   width: min(100%, 560px);
   display: grid;
 
+  @media (min-width:$tablet-width) {
+   margin: 99px 104px 101px;
+  }
+
   @media (min-width:$desktop-width) {
     grid-area: 1/2/3/3;
   }
