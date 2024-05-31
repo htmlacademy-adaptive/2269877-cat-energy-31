@@ -3,14 +3,22 @@
   justify-content: space-between;
   position: relative;
   z-index: 1;
+  align-items: center;
+  padding: 12px 20px;
+
 }
 
 .site-logo{
   align-items: center;
   display: flex;
-
-  @media (min-width: 360px) and (min-width: 767px){
-    flex-grow: 1;
+  flex-grow: 1;
+  @media (min-width:$desktop-width) {
+    .site-logo:hover{
+      opacity: 80%;
+    }
+    .site-logo:active{
+      opacity: 80%;
+    }
   }
 }
 
@@ -33,6 +41,7 @@
   height:18px;
   width: 101px;
   align-items: center;
+  margin: 0 auto;
 
 
 

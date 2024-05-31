@@ -13,8 +13,6 @@
   line-height: 24px;
   text-align: left;
   color: $black;
-  border-bottom: 1px solid #cdcdcd;
-  padding-bottom: 35px;
   position: relative;
 
   @media (min-width: $tablet-width){
@@ -24,7 +22,6 @@
 
   @media (min-width:$desktop-width) {
     display: block;
-    width: 100%;
     grid-area: 1/1/2/3;
   }
 }

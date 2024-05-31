@@ -27,16 +27,17 @@
 
   @media (min-width:$tablet-width) {
     //margin-top: 84px;
-    grid-gap: 60px;
-    grid-template-columns: 324px 324px;
+    gap: 140px 60px;
+    grid-template-columns: repeat(2, 1fr);
     margin: 0 0 74px;
     display: grid;
+    margin-top: 165px;
   }
 
   @media (min-width:$desktop-width) {
-    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
     flex-wrap: wrap;
-    max-width: 1220px;
   }
 }
 
@@ -54,5 +55,6 @@
 
   @media (min-width:$desktop-width) {
     min-width: 169px;
+    margin: 12px 0 0;
   }
 }

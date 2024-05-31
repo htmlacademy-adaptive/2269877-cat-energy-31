@@ -1,6 +1,10 @@
 .categories{
   display: flex;
   flex-direction: column;
+
+  @media (min-width:$desktop-width) {
+    padding-top: 282px;
+  }
 }
 .categories__list{
   min-width: 280px;
@@ -156,8 +160,7 @@
     line-height: 30px;
     grid-area: 3 / 1 / 4 / 2;
     padding: 0;
-    //margin: auto;
-    min-width: 168px;
+
   }
 }
 .categories__link::after{
@@ -175,5 +178,9 @@
     margin-top: 10px;
     margin-left: 24px;
   }
+}
+
+.categories__link:active{
+  opacity: 30%;
 }
 
