@@ -1,0 +1,39 @@
+.additional-card{
+  border-top: 1px solid #cdcdcd;
+
+  @media (min-width:$tablet-width) {
+     display: grid;
+    grid-template-columns: 1fr max-content;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+    padding: 26px 37px 28px;
+  }
+
+  @media (min-width:$desktop-width) {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-left: none;
+    border-right: none;
+  }
+}
+.additional-card__title{
+  @media(min-width:$desktop-width){
+    margin-bottom: 25px;
+  }
+}
+.additional-card__description{
+
+  @media(min-width:$tablet-width){
+    gap:50px;
+  }
+}
+.additional-card__button{
+  grid-area: 2/1/3/3;
+  width: 100%;
+  margin:0;
+
+  @media (min-width: $desktop-width) {
+    grid-area: auto;
+  }
+}

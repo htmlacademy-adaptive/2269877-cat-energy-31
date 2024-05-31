@@ -1,0 +1,15 @@
+.pagebody--nojs{
+  .header{
+    display: block;
+  }
+  .main-nav{
+    width: 100vw;
+    margin-left: -20px;
+  }
+  .main-nav__wrapper{
+    position: relative;
+  }
+  .main-nav__toggle::before{
+    content: none;
+  }
+}

@@ -47,7 +47,11 @@
   width: 100vw;
   height: 2px;
   position: absolute;
-  top: 7px;
+  top: 14px;
   right: 0;
   box-shadow: 100vw 0 #68b738;
+
+  @media (min-width:$tablet-width) {
+    top: 7px;
+  }
 }

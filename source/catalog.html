@@ -11,11 +11,11 @@
   <script defer src="scripts/index.js"></script>
 </head>
 
-<body class="page__body">
+<body class="page__body pagebody--nojs">
 <header class="header container">
   <a href="index.html" class="header__logo site-logo">
     <picture>
-      <source height="59" media="(min-width: 1200px)" srcset="images/icons/logotype-tablet.svg" type="image/svg+xml"
+      <source height="59" media="(min-width: 1440px)" srcset="images/icons/logo-pic.svg" type="image/svg+xml"
               width="70">
       <source height="50" media="(min-width: 768px)" srcset="images/icons/logotype-tablet.svg" type="image/svg+xml"
               width="60">
@@ -35,7 +35,7 @@
           </a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--catalog" href="#">
+          <a class="main-nav__link main-nav__link--catalog main-nav__link--current-accent" href="#">
             Каталог продукции
           </a>
         </li>
@@ -63,7 +63,7 @@
                  width="68">
           </picture>
         </a>
-        <a class="product-card__link-title" href="#"><p class="product-card__title">Cat Energy<br> PRO 500г</p></a>
+        <a class="product-card__title" href="#">Cat Energy<br> PRO 500г</a>
         <dl class="product-card__options">
           <div class="product-card__option">
             <dd class="product-card__option-term">Масса</dd>
@@ -93,7 +93,7 @@
                  width="84">
           </picture>
         </a>
-        <a class="product-card__link-title" href="#"><p class="product-card__title">Cat Energy<br> PRO 1000г</p></a>
+        <a class="product-card__title" href="#">Cat Energy<br> PRO 1000г</a>
         <dl class="product-card__options">
           <div class="product-card__option">
             <dd class="product-card__option-term">Масса</dd>
@@ -125,7 +125,7 @@
                    width="68">
             </picture>
           </a>
-          <a class="product-card__link-title" href="#"><p class="product-card__title">Cat Energy<br> PRO 500г</p></a>
+          <a class="product-card__title" href="#">Cat Energy<br> PRO 500г</a>
           <dl class="product-card__options">
           <div class="product-card__option">
             <dd class="product-card__option-term">Масса</dd>
@@ -157,7 +157,7 @@
                    width="84">
             </picture>
           </a>
-          <a class="product-card__link-title" href="#"><p class="product-card__title">Cat Energy<br> PRO 1000 г</p></a>
+          <a class="product-card__title" href="#">Cat Energy<br> PRO 1000 г</a>
           <dl class="product-card__options">
             <div class="product-card__option">
               <dd class="product-card__option-term">Масса</dd>
@@ -189,7 +189,7 @@
                    width="68">
             </picture>
           </a>
-          <a class="product-card__link-title" href="#"><p class="product-card__title">Cat Energy<br> Slim 500 г</p></a>
+          <a class="product-card__title" href="#">Cat Energy<br> Slim 500 г</a>
           <dl class="product-card__options">
             <div class="product-card__option">
               <dd class="product-card__option-term">Масса</dd>
@@ -220,7 +220,7 @@
                    width="84">
             </picture>
           </a>
-          <a class="product-card__link-title" href="#"><p class="product-card__title">Cat Energy<br> Slim 1000 г</p></a>
+          <a class="product-card__title" href="#">Cat Energy<br> Slim 1000 г</a>
           <dl class="product-card__options">
             <div class="product-card__option">
               <dd class="product-card__option-term">Масса</dd>
@@ -253,7 +253,7 @@
             </picture>
           </a>
 
-          <a class="product-card__link-title" href="#"><p class="product-card__title">Cat Energy<br> Slim 500 г</p></a>
+          <a class="product-card__title" href="#">Cat Energy<br> Slim 500 г</a>
           <dl class="product-card__options">
             <div class="product-card__option">
               <dd class="product-card__option-term">Масса</dd>
@@ -279,7 +279,7 @@
       </li>
     </ul>
   </section>
-  <section class="additional-products">
+  <section class="additional-products container">
     <h2 class="additional-products__title title-h3 title-h3--line">Дополнительные продукты</h2>
     <ul class="additional-products__list">
       <li class="products-cards__item additional-card">
@@ -327,8 +327,8 @@
       <p class="special-offer__text">Закажите все<br> и получите чехол для<br> кота в подарок!</p>
     </div>
   </section>
-  <section class="subscribe container">
-    <div class="subscribe__container">
+  <section class="subscribe">
+    <div class="subscribe__container container">
       <h2 class="subscribe__title title-h3 title-h3--line">Акции и новинки</h2>
       <p class="subscribe__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
       <form action="https://htmlacademy.ru" class="subscribe__form" method="post">
@@ -341,16 +341,18 @@
     </div>
   </section>
   <section class="contacts contacts--catalog">
-    <div class="contacts__content container">
-      <p class="contacts__text">Приглашаем<br> к сотрудничеству<br> дилеров!</p>
-      <address class="contacts__address"><span>ул. Большая<br> Конюшенная, д. 19/8<br><br> Санкт-Петербург</span></address>
+    <div class="container">
+      <div class="contacts__content">
+        <p class="contacts__text">Приглашаем<br> к сотрудничеству дилеров!</p>
+        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__address-style">Санкт-Петербург</span></address>
+      </div>
     </div>
     <div class="contacts__map">
       <noscript>
         <picture>
-          <source height="400" media="(min-width: 1200px)"
+          <source height="400" media="(min-width: 1440px)"
                   srcset="images/location-pc.png 1x, images/location-pc@2x.png 2x" type="image/png"
-                  width="1200">
+                  width="1440">
           <source height="400" media="(min-width: 768px)"
                   srcset="images/location-tablet.png 1x, images/location-mobile@2x.png 2x" type="image/png"
                   width="768">

@@ -1,5 +1,5 @@
 .button{
-  display: inline-block;
+  display: block;
   font-family: $font-title-second;
   font-size: 16px;
   text-transform: uppercase;
@@ -18,7 +18,6 @@
 
   &--lg{
     min-height: 54px;
-    /*посчитать размер*/
   }
 
   &--secondary{
@@ -31,6 +30,13 @@
     padding: 10px 44px;
     color: #ffffff;
     background-color: $green;
+  }
+
+  &--primary:hover{
+    background-color: #5EAA2F;
+  }
+    &--primary:active{
+    opacity: 30%;
   }
 }
 

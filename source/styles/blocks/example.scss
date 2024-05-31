@@ -1,0 +1,10 @@
+.example{
+  @media (min-width:$tablet-width) {
+    background-color: #ffffff;
+    background-image: linear-gradient(#fff0 0 56%, #f2f2f2 136px 100%);
+  }
+
+  @media (min-width:$desktop-width) {
+    background-image: linear-gradient(#fff0 0 26%, #f2f2f2 136px 100%);
+  }
+}
