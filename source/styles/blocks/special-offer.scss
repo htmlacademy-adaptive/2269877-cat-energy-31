@@ -1,6 +1,6 @@
 .special-offer{
   margin-top: 35px;
-  background-color: $green;
+  background-color: $primary-color;
   min-width: 280px;
   padding: 59px 43px 60px;
   background-image:linear-gradient(rgba(104, 183, 56, 0.85),rgba(104, 183, 56, 0.85)), url("../../images/offer-background-mobile.png");
@@ -20,7 +20,9 @@
 
 
     @media (min-width:$desktop-width) {
+
       margin:0;
+
       padding: 59px 43px 60px;
       align-items: center;
       flex-direction: column;

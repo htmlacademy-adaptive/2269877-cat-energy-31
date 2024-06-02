@@ -11,11 +11,11 @@
   <script defer src="scripts/index.js"></script>
 </head>
 
-<body class="page__body">
+<body class="page__body pagebody--nojs">
 <header class="header container">
   <a href="index.html" class="header__logo site-logo">
     <picture>
-      <source height="59" media="(min-width: 1200px)" srcset="images/icons/logotype-tablet.svg" type="image/svg+xml"
+      <source height="59" media="(min-width: 1440px)" srcset="images/icons/logo-pic.svg" type="image/svg+xml"
               width="70">
       <source height="50" media="(min-width: 768px)" srcset="images/icons/logotype-tablet.svg" type="image/svg+xml"
               width="60">
@@ -275,7 +275,7 @@
       <li class="catalog__item product-card product--show-all">
         <h2 class="product-card__title product-card__title--show-all">Показать еще 100500 товаров</h2>
         <p class="product-card__text">На самом деле вкусов гораздо больше!</p>
-        <a class="product-card__button button button--secondary" href="#">Показать всё</a>
+        <a class="product-card__button button button--secondary button--lg" href="#">Показать всё</a>
       </li>
     </ul>
   </section>
@@ -343,16 +343,17 @@
   <section class="contacts contacts--catalog">
     <div class="container">
       <div class="contacts__content">
-        <p class="contacts__text">Приглашаем<br> к сотрудничеству<br> дилеров!</p>
-        <address class="contacts__address"><span>ул. Большая<br> Конюшенная, д. 19/8<br><br> Санкт-Петербург</span></address>
+
+        <p class="contacts__text">Приглашаем<br> к сотрудничеству дилеров!</p>
+        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__address-style">Санкт-Петербург</span></address>
       </div>
     </div>
     <div class="contacts__map">
       <noscript>
         <picture>
-          <source height="400" media="(min-width: 1200px)"
+          <source height="400" media="(min-width: 1440px)"
                   srcset="images/location-pc.png 1x, images/location-pc@2x.png 2x" type="image/png"
-                  width="1200">
+                  width="1440">
           <source height="400" media="(min-width: 768px)"
                   srcset="images/location-tablet.png 1x, images/location-mobile@2x.png 2x" type="image/png"
                   width="768">
@@ -393,6 +394,5 @@
   </a>
 </div>
 </footer>
-
 </body>
 </html>

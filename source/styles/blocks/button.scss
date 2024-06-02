@@ -1,5 +1,5 @@
 .button{
-  display: block;
+  display: inline-block;
   font-family: $font-title-second;
   font-size: 16px;
   text-transform: uppercase;
@@ -9,7 +9,7 @@
   padding: 10px 20px;
   cursor: pointer;
   border: 0;
-  //min-width: 280px;
+
 
   @media (min-width: $tablet-width){
     font-size: 20px;
@@ -18,22 +18,22 @@
 
   &--lg{
     min-height: 54px;
+    display: block;
+    //шрифт + падинги (приблиз)
   }
 
   &--secondary{
-    background-color: $lightgrey;
-    color: #444444;
-    width: 100%;
+    background-color: $bg-secondary;
+    color: $font-color-primary;
   }
 
   &--primary{
-    padding: 10px 44px;
-    color: #ffffff;
-    background-color: $green;
+    color: $white;
+    background-color: $primary-color;
   }
 
   &--primary:hover{
-    background-color: #5EAA2F;
+    background-color: $bg-primary-special;
   }
     &--primary:active{
     opacity: 30%;

@@ -1,11 +1,11 @@
 .additional-card{
-  border-top: 1px solid #cdcdcd;
+  border-top: 1px solid $border-color-primary;
 
   @media (min-width:$tablet-width) {
      display: grid;
     grid-template-columns: 1fr max-content;
-    border-left: 1px solid #cdcdcd;
-    border-right: 1px solid #cdcdcd;
+    border-left: 1px solid $border-color-primary;
+    border-right: 1px solid $border-color-primary;
     padding: 26px 37px 28px;
   }
 

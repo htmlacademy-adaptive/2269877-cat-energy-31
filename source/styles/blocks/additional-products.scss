@@ -36,7 +36,7 @@
   }
 }
 .additional-card{
-  border-bottom: 1px solid #cdcdcd;
+  border-bottom: 1px solid $border-color-primary;
 
   @media (min-width: $desktop-width) {
     display: grid;
@@ -49,7 +49,7 @@
   font-size: 16px;
   line-height: 16px;
   text-align: left;
-  color: $charcoal-gray;
+  color: $font-color-secondary;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
@@ -72,7 +72,7 @@
     font-size: 14px;
     line-height: 14px;
     text-align: center;
-    color: $gray;
+    color: $font-color-primary;
 
     @media (min-width: $tablet-width){
       font-size: 16px;

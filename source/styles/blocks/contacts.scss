@@ -2,7 +2,7 @@
   background-color: $white;
 }
 .contacts--catalog{
-  background-color:$lightgrey;
+  background-color:$bg-secondary;
 }
 .contacts__content{
   display: flex;
@@ -28,7 +28,7 @@
   font-size: 16px;
   line-height: 20px;
   text-align: left;
-  color: $dark-gray;
+  color: $font-color-accent;
   text-transform: uppercase;
   max-width: 140px;
 
@@ -44,7 +44,7 @@
   font-size: 14px;
   line-height: 20px;
   text-align: left;
-  color: $gray;
+  color: $font-color-primary;
   max-width: 140px;
 
   @media (min-width: $tablet-width){
@@ -57,6 +57,7 @@
   }
 }
 .contacts__map{
+  display: flex;
   max-width: 100%;
 
   @media (min-width:$desktop-width) {
