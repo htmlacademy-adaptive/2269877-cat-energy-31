@@ -7,7 +7,7 @@
   grid-template-columns: 1fr 1fr;
   display: grid;
   row-gap: 20px;
-  padding: 20px 20px 25px;
+  padding: 19px 20px 25px;
   grid-template-areas:
     'img title'
     'img options'
@@ -97,6 +97,7 @@
 }
 .product-card__title--show-all{
   text-align: center;
+  margin-top: 28px;
 }
 .product-card__text{
   font-size: 12px;
@@ -116,6 +117,7 @@
 .product-card__options{
   grid-area: options;
   margin: 0;
+  margin-top:-20px;
 
   @media (min-width: $tablet-width){
     margin-top: 30px;
@@ -152,6 +154,9 @@
 .product--show-all{
   background-color: transparent;
   border: 2px solid $bg-secondary;
+}
+.product-card__button{
+  margin-top: 16px;
 }
 
 

@@ -6,47 +6,56 @@
   <title>Кэт Энерджи</title>
   <meta content="width=device-width,initial-scale=1" name="viewport">
   <link href="styles/styles.css" rel="stylesheet">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/180.png"><!-- 180×180 -->
+
   <!-- Подключение стилевого файла из папки 'vendor' -->
   <link href="vendor/normalize.css" rel="stylesheet">
   <script defer src="scripts/index.js"></script>
 </head>
 <body class="page__body pagebody--nojs">
 
-<header class="header container">
-  <a class="header__logo site-logo" href="#">
-    <picture>
-      <source height="59" media="(min-width: 1440px)" srcset="images/icons/logo-pic.svg" type="image/svg+xml"
-              width="70">
-      <source height="50" media="(min-width: 768px)" srcset="images/icons/logotype-tablet.svg" type="image/svg+xml"
-              width="60">
-      <img alt="Кот Энерджи." class="header__logo-image" height="38" src="images/icons/logo-mobile.svg" width="33">
-    </picture>
-    <img alt="Кот Энерджи." class="header__logo--text" height="18" src="images/icons/logo-text.svg" width="101">
-  </a>
+<header class="header">
+  <div class="header__wrapper container">
+    <a class="header__logo site-logo" href="#">
+      <picture>
+        <source height="59" media="(min-width: 1440px)" srcset="images/icons/logo-pic.svg" type="image/svg+xml"
+                width="70">
+        <source height="50" media="(min-width: 768px)" srcset="images/icons/logotype-tablet.svg" type="image/svg+xml"
+                width="60">
+        <img alt="Кот Энерджи." class="header__logo-image" height="38" src="images/icons/logo-mobile.svg" width="33">
+      </picture>
+      <img alt="Кот Энерджи." class="header__logo--text" height="18" src="images/icons/logo-text.svg" width="101">
+    </a>
 
-  <nav class="main-nav">
-    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    <div class="main-nav__wrapper main-nav__wrapper--open">
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper main-nav__wrapper--open">
 
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--active" href="#">
-            Главная
-          </a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="catalog.html">
-            Каталог продукции
-          </a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">
-            Подбор продукции
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active" href="#">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              Подбор продукции
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
 </header>
 <main class="main-container">
 
@@ -127,8 +136,7 @@
           <dt class="main-illustration__label-number"><span>60 дней</span></dt>
           <dd class="main-illustration__label-description">затрачено времени</dd>
         </div>
-        <p class="main-illustration__price"><span>Затраты на питание:</span>
-          <span> 15 000 РУБ.</span></p>
+        <p class="main-illustration__price">Затраты на питание:<span>15 000 РУБ.</span></p>
       </div>
 
       <div class="main-illustration__slides">

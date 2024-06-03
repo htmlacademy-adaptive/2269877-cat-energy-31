@@ -19,6 +19,7 @@
 }
 
 .main-nav__list{
+
   margin: 0;
   padding: 0;
   gap: 33px;
@@ -28,7 +29,7 @@
 
   @media (min-width: $tablet-width){
     text-transform: uppercase;
-    padding: 0;
+    padding: 0 0 8px;
     display: flex;
   }
 
@@ -71,6 +72,7 @@
     text-align: center;
 
     @media (min-width:$tablet-width) {
+      padding: 0;
       border: none;
     }
   }
@@ -112,6 +114,7 @@
 
 
 @media (min-width:$tablet-width) {
+
   .main-nav__link--active::after,
   .main-nav__link--current-accent::after{
     content: "";
@@ -124,6 +127,15 @@
   }
 }
 @media (min-width:$desktop-width) {
+  .main-nav__link--active::after{
+    content: "";
+    background-color:$white;
+    height: 2px;
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+    right: 0;
+  }
 
   .main-nav__link--current-accent::after{
     background-color:$border-color-accent;

@@ -4,6 +4,7 @@
   line-height: 36px;
   text-align: left;
   color: $black;
+  padding-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -47,6 +48,7 @@
   }
 
   .product-card & {
+    margin-top:-19px;
     grid-area: footer;
 
   }

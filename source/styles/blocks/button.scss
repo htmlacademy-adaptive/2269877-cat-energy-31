@@ -17,7 +17,6 @@
   }
 
   &--lg{
-    min-height: 54px;
     display: block;
     //шрифт + падинги (приблиз)
   }
@@ -35,8 +34,15 @@
   &--primary:hover{
     background-color: $bg-primary-special;
   }
-    &--primary:active{
-    opacity: 30%;
+  &--primary:active{
+    color: #ffffff4d;
+  }
+
+  &--secondary:hover{
+    background-color: $bg-secondary-special
+  }
+  &--secondary:active{
+    background-color: $bg-secondary-special
   }
 }
 

@@ -11,6 +11,7 @@
 
   @media (min-width:$tablet-width) {
     border: none;
+    align-self: center;
   }
 }
 
@@ -31,4 +32,11 @@
 }
 .social__link--telegram::after{
   mask-image: url("../../icons/stack.svg#telegram");
+}
+.socials__link:hover:after{
+  opacity: .3;
+  background-color: $primary-color;
+}
+.socials__link:active:after{
+  background-color: $primary-color;
 }

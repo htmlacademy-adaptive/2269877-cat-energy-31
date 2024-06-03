@@ -47,12 +47,9 @@
 .subscribe__form{
   @media (min-width:$tablet-width) {
     display: flex;
-    //max-width: 632px;
     justify-content: center;
     padding-bottom: 80px;
-
   }
-
   @media (min-width:$desktop-width) {
     margin: 0 233px;
   }
@@ -78,6 +75,14 @@
   @media (min-width:$tablet-width) {
     min-width: 376px;
   }
+}
+.subscribe__input:hover{
+  border: 1px solid $border-color-primary;
+}
+.subscribe__input:focus{
+  outline-offset: -2px;
+  border-color: $font-color-primary;
+  outline: 2px solid $font-color-primary;
 }
 .subscribe__button{
   font-family: $font-title-second;
