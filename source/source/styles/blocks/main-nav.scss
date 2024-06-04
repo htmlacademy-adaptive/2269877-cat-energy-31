@@ -1,0 +1,144 @@
+@use "../global/mixins.scss";
+@use "../global/variables.scss";
+
+.main-nav__toggle {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+.main-nav__toggle::before {
+  display: block;
+  width: 24px;
+  height: 24px;
+  content: "";
+  background-image: url("../../icons/mobile-menu.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  gap: 33px;
+  list-style: none;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    text-transform: uppercase;
+    padding: 0 0 8px;
+    display: flex;
+  }
+}
+
+.main-nav__wrapper {
+  flex-wrap: wrap;
+  margin: 0 auto;
+  min-width: 279px;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: $white;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+}
+
+.main-nav--open {
+  @media (max-width: $mobile-width-only) {
+    .main-nav__wrapper {
+      display: block;
+    }
+
+    .main-nav__toggle::before {
+      background-image: url("../../icons/mobile-close.svg");
+    }
+  }
+}
+
+
+.main-nav__item {
+  border-top: 1px solid $bg-secondary-special;
+  border-bottom: 1px solid $bg-secondary-special;
+  padding: 22px 0 24px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
+  }
+}
+
+.main-nav__link {
+  position: relative;
+  font-family: $font-title-second;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  padding: 22px 0 24px;
+  color: $black;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.main-nav__link:hover {
+  opacity: 60%;
+}
+
+.main-nav__link:active {
+  opacity: 30%;
+}
+
+.main-nav__link--catalog {
+  @media (min-width: $desktop-width) {
+    color: $black;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__link--active::after,
+  .main-nav__link--current-accent::after {
+    content: "";
+    background-color: $border-color-accent;
+    height: 2px;
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__link--active::after {
+    content: "";
+    background-color: $white;
+    height: 2px;
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+    right: 0;
+  }
+
+  .main-nav__link--current-accent::after {
+    background-color: $border-color-accent;
+  }
+}
