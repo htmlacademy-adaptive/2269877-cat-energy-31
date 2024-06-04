@@ -1,13 +1,17 @@
-.additional-products{
+@use "../global/mixins.scss";
+@use "../global/variables.scss";
+
+.additional-products {
   padding-top: 25px;
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     display: grid;
     column-gap: 80px;
     grid-template-columns: 1fr 245px;
   }
 }
-.additional-products__title{
+
+.additional-products__title {
   font-family: $font-title-second;
   font-size: 24px;
   line-height: 24px;
@@ -15,27 +19,28 @@
   color: $black;
   position: relative;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     display: block;
     grid-area: 1/1/2/3;
   }
 }
 
-.additional-products__list{
+.additional-products__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     flex: auto;
   }
 }
-.additional-card{
+
+.additional-card {
   border-bottom: 1px solid $border-color-primary;
 
   @media (min-width: $desktop-width) {
@@ -44,7 +49,8 @@
     align-items: center;
   }
 }
-.additional-card__title{
+
+.additional-card__title {
   font-family: $font-title-second;
   font-size: 16px;
   line-height: 16px;
@@ -57,34 +63,37 @@
     line-height: 20px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     height: 20px;
   }
 
 }
-.additional-card__description{
+
+.additional-card__description {
   display: flex;
   justify-content: space-between;
 }
+
 .additional-card__term,
-.additional-card__definition{
+.additional-card__definition {
 
-    font-size: 14px;
-    line-height: 14px;
-    text-align: center;
-    color: $font-color-primary;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: $font-color-primary;
 
-    @media (min-width: $tablet-width){
-      font-size: 16px;
-      line-height: 20px;
-    }
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 0 20px;
     height: 20px;
   }
 
 }
-.additional-card__button{
+
+.additional-card__button {
   margin: 15px auto 18px;
 }

@@ -1,63 +1,70 @@
-.subscribe{
+@use "../global/mixins.scss";
+@use "../global/variables.scss";
+
+.subscribe {
   overflow: hidden;
 
   padding-top: 40px;
   padding-bottom: 40px;
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 80px;
-    padding-bottom:0;
+    padding-bottom: 0;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 96px;
-    padding-bottom:0;
+    padding-bottom: 0;
   }
 
 }
 
-.subscribe__title{
+.subscribe__title {
   font-family: $font-title-second;
   font-size: 24px;
   line-height: 24px;
   text-align: left;
   color: $black;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
   }
 }
-.subscribe__description{
+
+.subscribe__description {
   font-family: $font-title-second;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
   color: $black;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     padding-top: 60px;
     font-size: 24px;
     line-height: 32px;
   }
 
-  @media (min-width: $desktop-width){
+  @media (min-width: $desktop-width) {
     padding-top: 72px;
   }
 }
-.subscribe__form{
-  @media (min-width:$tablet-width) {
+
+.subscribe__form {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: center;
     padding-bottom: 80px;
   }
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     margin: 0 233px;
   }
 }
-.subscribe__label{
+
+.subscribe__label {
   display: block;
 }
-.subscribe__input{
+
+.subscribe__input {
   font-family: $font-title-second;
   font-size: 20px;
   font-weight: 400;
@@ -72,19 +79,22 @@
   margin-bottom: 16px;
   padding: 13px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     min-width: 376px;
   }
 }
-.subscribe__input:hover{
+
+.subscribe__input:hover {
   border: 1px solid $border-color-primary;
 }
-.subscribe__input:focus{
+
+.subscribe__input:focus {
   outline-offset: -2px;
   border-color: $font-color-primary;
   outline: 2px solid $font-color-primary;
 }
-.subscribe__button{
+
+.subscribe__button {
   font-family: $font-title-second;
   font-size: 20px;
   line-height: 26px;
@@ -93,7 +103,7 @@
   background-color: $primary-color;
   width: 100%;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     max-height: 58px;
     min-width: 256px;
   }

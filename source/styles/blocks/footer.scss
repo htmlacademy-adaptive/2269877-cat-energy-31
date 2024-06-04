@@ -1,18 +1,22 @@
-footer{
+@use "../global/mixins.scss";
+@use "../global/variables.scss";
+
+footer {
   background-color: $bg-secondary;
 }
-.footer__container{
-  @media (min-width:$tablet-width) {
+
+.footer__container {
+  @media (min-width: $tablet-width) {
     padding-top: 50px;
     display: flex;
   }
-  @media (min-width:$desktop-width) {
-    //padding-top: 0;
+  @media (min-width: $desktop-width) {
     padding: 65px;
   }
 
 }
-.footer__logo{
+
+.footer__logo {
   display: flex;
   padding-top: 40px;
   padding-bottom: 19px;
@@ -20,17 +24,16 @@ footer{
   text-decoration: none;
   border-bottom: 1px solid $border-color-special;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 0;
     border: none;
   }
 }
-.footer__logo:hover{
+
+.footer__logo:hover {
   opacity: .8;
 }
-.footer__logo:active{
+
+.footer__logo:active {
   opacity: .6;
 }
-
-
-

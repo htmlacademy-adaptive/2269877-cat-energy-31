@@ -1,5 +1,7 @@
+@use "../global/mixins.scss";
+@use "../global/variables.scss";
 
-.socials{
+.socials {
   display: flex;
   gap: 20px;
   margin: 0 auto;
@@ -9,13 +11,13 @@
   list-style: none;
   border-bottom: 1px solid $border-color-special;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     border: none;
     align-self: center;
   }
 }
 
-.socials__link::after{
+.socials__link::after {
   display: block;
   content: "";
   width: 28px;
@@ -24,19 +26,24 @@
   mask-size: 28px 22px;
   background-color: $icon-color;
 }
-.social__link--vk::after{
+
+.social__link--vk::after {
   mask-image: url("../../icons/stack.svg#vkontakte");
 }
-.social__link--youtube::after{
+
+.social__link--youtube::after {
   mask-image: url("../../icons/stack.svg#youtube");
 }
-.social__link--telegram::after{
+
+.social__link--telegram::after {
   mask-image: url("../../icons/stack.svg#telegram");
 }
-.socials__link:hover:after{
+
+.socials__link:hover:after {
   opacity: .3;
   background-color: $primary-color;
 }
-.socials__link:active:after{
+
+.socials__link:active:after {
   background-color: $primary-color;
 }

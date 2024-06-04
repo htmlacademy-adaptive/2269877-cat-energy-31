@@ -1,4 +1,7 @@
-.button{
+@use "../global/mixins.scss";
+@use "../global/variables.scss";
+
+.button {
   display: inline-block;
   font-family: $font-title-second;
   font-size: 16px;
@@ -10,38 +13,38 @@
   cursor: pointer;
   border: 0;
 
-
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
   }
 
-  &--lg{
+  &--lg {
     display: block;
-    //шрифт + падинги (приблиз)
   }
 
-  &--secondary{
+  &--secondary {
     background-color: $bg-secondary;
     color: $font-color-primary;
   }
 
-  &--primary{
+  &--primary {
     color: $white;
     background-color: $primary-color;
   }
 
-  &--primary:hover{
+  &--primary:hover {
     background-color: $bg-primary-special;
   }
-  &--primary:active{
+
+  &--primary:active {
     color: #ffffff4d;
   }
 
-  &--secondary:hover{
+  &--secondary:hover {
     background-color: $bg-secondary-special
   }
-  &--secondary:active{
+
+  &--secondary:active {
     background-color: $bg-secondary-special
   }
 }

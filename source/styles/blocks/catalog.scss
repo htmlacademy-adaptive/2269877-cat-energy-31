@@ -1,3 +1,6 @@
+@use "../global/mixins.scss";
+@use "../global/variables.scss";
+
 .catalog__title {
   font-family: $font-title-second;
   font-size: 36px;
@@ -11,7 +14,8 @@
     line-height: 60px;
   }
 }
-.catalog__item{
+
+.catalog__item {
   border-top: 1px solid $bg-secondary-special;
   margin: 0;
   padding: 20px 20px 0;
@@ -19,13 +23,12 @@
 
 }
 
-
-.catalog__list{
+.catalog__list {
   margin: -20px;
   padding: 0;
   list-style-type: none;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     gap: 140px 60px;
     grid-template-columns: repeat(2, 1fr);
     margin: 0 0 74px;
@@ -33,27 +36,27 @@
     margin-top: 165px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     display: grid;
     flex-wrap: wrap;
   }
 }
 
-.catalog__button{
-  @media (min-width:$tablet-width) {
+.catalog__button {
+  @media (min-width: $tablet-width) {
     min-width: 250px;
     min-height: 40px;
     margin: 32px 0 0;
   }
 
   .product-card & {
-    margin-top:-19px;
+    margin-top: -19px;
     grid-area: footer;
 
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     min-width: 169px;
     margin: 12px 0 0;
   }

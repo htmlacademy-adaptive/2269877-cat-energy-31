@@ -1,26 +1,31 @@
-.contacts{
+@use "../global/mixins.scss";
+@use "../global/variables.scss";
+
+.contacts {
   background-color: $white;
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     position: relative;
     padding-top: 90px;
     padding-bottom: 101px;
   }
 }
-.contacts--catalog{
-  background-color:$bg-secondary;
+
+.contacts--catalog {
+  background-color: $bg-secondary;
 }
-.contacts__content{
+
+.contacts__content {
   display: flex;
   justify-content: space-between;
   padding: 26px 0;
 
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 60px 40px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     z-index: 1;
     max-width: 565px;
     background-color: $white;
@@ -28,8 +33,9 @@
 
   }
 }
-.contacts__text{
-  margin:0;
+
+.contacts__text {
+  margin: 0;
   font-family: $font-title-second;
   font-size: 16px;
   line-height: 20px;
@@ -39,16 +45,17 @@
   max-width: 140px;
 
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     max-width: 160px;
     font-size: 20px;
     line-height: 26px;
   }
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
 
   }
 }
-.contacts__address{
+
+.contacts__address {
   font-style: normal;
   font-size: 14px;
   line-height: 20px;
@@ -56,7 +63,7 @@
   color: $font-color-primary;
   max-width: 140px;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     flex-direction: column;
     gap: 20px;
     max-width: 160px;
@@ -65,30 +72,33 @@
     text-align: right;
   }
 }
-.contacts__map{
+
+.contacts__map {
   max-width: 100%;
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     position: absolute;
-    height:100%;
+    height: 100%;
     width: 100%;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
   }
 
 }
-.contacts__map--img{
+
+.contacts__map--img {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.contacts__map iframe{
+
+.contacts__map iframe {
   border: 0;
   width: 100%;
   height: 100%;
 
-  .page__body--nojs &{
+  .page__body--nojs & {
     display: none;
   }
 }

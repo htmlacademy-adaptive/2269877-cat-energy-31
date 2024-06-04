@@ -1,25 +1,29 @@
-.developers{
+@use "../global/mixins.scss";
+@use "../global/variables.scss";
+
+.developers {
   text-decoration: none;
   padding: 20px 0;
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 0;
   }
 }
-.developers__title{
+
+.developers__title {
   color: $font-color-primary;
   justify-content: space-between;
   padding: 26px 0;
   font-size: 16px;
   line-height: 20px;
   display: flex;
-
 }
 
-.developers__title:active{
+.developers__title:active {
   color: rgba($font-color-primary, 0.3);
 }
-.developers__title::after{
+
+.developers__title::after {
   display: block;
   content: "";
   width: 27px;
@@ -29,7 +33,7 @@
   mask-repeat: no-repeat;
   background-color: #666;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-left: 23px;
   }
 
@@ -38,6 +42,7 @@
 .developers__title::after:hover {
   background-color: $primary-color;
 }
+
 .developers__title::after:active {
   background-color: $primary-color, 0.3;
 }
