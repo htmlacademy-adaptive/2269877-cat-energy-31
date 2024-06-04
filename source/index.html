@@ -16,7 +16,7 @@
   <link href="vendor/normalize.css" rel="stylesheet">
   <script defer src="scripts/index.js"></script>
 </head>
-<body class="page__body pagebody--nojs">
+<body class="page__body page__body--nojs">
 
 <header class="header">
   <div class="header__wrapper container">
@@ -66,6 +66,12 @@
         <p class="promo__intro">Занялся собой? Займись котом!</p>
         <a class="promo__button button button--primary button--lg" href="#">Подобрать программу</a>
         <picture>
+          <source height="498" media="(min-width: 1440px)"
+                  srcset="images/hero-product-pc@1x.png 1x, images/hero-product-pc@2x.png 2x" type="image/webp"
+                  width="554">
+          <source height="609" media="(min-width: 768px)"
+                  srcset="images/hero-product-tablet@1x.png 1x, images/hero-product-tablet@2x.png 2x" type="image/webp"
+                  width="709">
           <source height="498" media="(min-width: 1440px)"
                   srcset="images/hero-product-pc@1x.png 1x, images/hero-product-pc@2x.png 2x" type="image/png"
                   width="554">
@@ -143,6 +149,9 @@
 
         <picture>
           <source height="512" media="(min-width: 768px)"
+                  srcset="images/cat-tablet-pc-before@1x.png 1x, images/cat-tablet-pc-before@2x.png 2x" type="image/webp"
+                  width="560">
+          <source height="512" media="(min-width: 768px)"
                   srcset="images/cat-tablet-pc-before@1x.png 1x, images/cat-tablet-pc-before@2x.png 2x" type="image/png"
                   width="560">
           <img alt="Кот с лишним весом" class="main-illustration__image slider__image slider__image--state-before"
@@ -150,6 +159,9 @@
                srcset="images/cat-mobile-before@2x.png 2x" width="280">
         </picture>
         <picture>
+          <source height="512" media="(min-width: 768px)"
+                  srcset="images/cat-tablet-pc-after@1x.png 1x, images/cat-tablet-pc-after@2x.png 2x" type="image/webp"
+                  width="560">
           <source height="512" media="(min-width: 768px)"
                   srcset="images/cat-tablet-pc-after@1x.png 1x, images/cat-tablet-pc-after@2x.png 2x" type="image/png"
                   width="560">
@@ -175,6 +187,12 @@
     <div class="contacts__map">
       <noscript>
         <picture>
+          <source height="400" media="(min-width: 1440px)"
+                  srcset="images/location-pc.png 1x, images/location-pc@2x.png 2x" type="image/webp"
+                  width="1440">
+          <source height="400" media="(min-width: 768px)"
+                  srcset="images/location-tablet.png 1x, images/location-mobile@2x.png 2x" type="image/webp"
+                  width="768">
           <source height="400" media="(min-width: 1440px)"
                   srcset="images/location-pc.png 1x, images/location-pc@2x.png 2x" type="image/png"
                   width="1440">
