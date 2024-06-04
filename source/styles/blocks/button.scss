@@ -37,14 +37,14 @@
   }
 
   &--primary:active {
-    color: #ffffff4d;
+    color: $font-color-primary;
   }
 
   &--secondary:hover {
-    background-color: $bg-secondary-special
+    background-color: $bg-secondary-special;
   }
 
   &--secondary:active {
-    background-color: $bg-secondary-special
+    background-color: $bg-secondary-special;
   }
 }
