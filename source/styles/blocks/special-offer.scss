@@ -21,9 +21,7 @@
   }
 
   @media (min-width: $desktop-width) {
-
     margin: 0;
-
     padding: 59px 43px 60px;
     align-items: center;
     flex-direction: column;
@@ -31,7 +29,6 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-
 }
 
 .special-offer::before {
@@ -42,9 +39,7 @@
   background-image: url("../../icons/stack.svg#icon-gift");
   background-repeat: no-repeat;
   background-size: contain;
-
   margin: 0 auto 48px;
-
 
   @media (min-width: $tablet-width) {
     width: 80px;

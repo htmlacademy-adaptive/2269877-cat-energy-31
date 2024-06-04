@@ -87,7 +87,6 @@
   color: $font-color-secondary;
   text-transform: uppercase;
 
-
   @media (min-width: $tablet-width) {
     margin-top: 33px;
     font-size: 20px;
@@ -95,10 +94,7 @@
     text-align: center;
     max-width: 135px;
     margin: 0 auto 20px;
-
   }
-
-
 }
 
 .product-card__title--show-all {
@@ -134,7 +130,6 @@
   @media (min-width: $desktop-width) {
     margin-top: 0;
   }
-
 }
 
 .product-card__option {

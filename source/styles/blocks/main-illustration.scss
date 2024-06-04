@@ -89,7 +89,6 @@
     width: 162px;
     height: 72px;
   }
-
 }
 
 .main-illustration__label-number {
@@ -155,6 +154,7 @@
     line-height: 20px;
     display: flex;
   }
+
   @media (min-width: $desktop-width) {
     grid-area: 2/1/3/3;
     display: grid;
@@ -242,7 +242,6 @@
   mask-size: contain;
   mask-repeat: no-repeat;
   z-index: 1;
-
 }
 
 .main-illustration__button:active {
@@ -271,4 +270,3 @@
 .main-illustration__button:hover {
   background-color: $primary-color;
 }
-

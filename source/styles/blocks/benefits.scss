@@ -111,10 +111,11 @@
   background-size: 26px 31px;
 }
 
-@media (width >= 768px) {
+@media (min-width: $tablet-width) {
   .benefits__list {
     counter-reset: test;
   }
+
   .benefits__list .benefits__item::after {
     counter-increment: test;
     content: counter(test);
@@ -130,6 +131,7 @@
     top: -43px;
     right: 0;
   }
+
   .benefits__item:not(:nth-last-child(-n+2)) {
     margin-bottom: 37px;
   }

@@ -22,14 +22,13 @@
 }
 
 .additional-card__title {
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 25px;
   }
 }
 
 .additional-card__description {
-
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     gap: 50px;
   }
 }
