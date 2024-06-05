@@ -10,7 +10,9 @@ footer {
     padding-top: 50px;
     display: flex;
   }
+
   @media (min-width: $desktop-width) {
+    padding-top:0;
     padding: 65px;
   }
 }

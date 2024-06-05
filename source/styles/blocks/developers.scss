@@ -31,7 +31,7 @@
   mask-image: url("../../icons/stack.svg#academy-logo");
   mask-position: center;
   mask-repeat: no-repeat;
-  background-color: #666;
+  background-color: $icon-color;
 
   @media (min-width: $tablet-width) {
     margin-left: 23px;
