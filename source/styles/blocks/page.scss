@@ -1,0 +1,23 @@
+@use "../global/mixins.scss";
+@use "../global/variables.scss";
+
+@media (max-width: $mobile-width-only) {
+  .page__body--nojs {
+    .header {
+      display: block;
+    }
+
+    .main-nav {
+      width: 100vw;
+      margin-left: -20px;
+    }
+
+    .main-nav__wrapper {
+      position: relative;
+    }
+
+    .main-nav__toggle::before {
+      content: none;
+    }
+  }
+}

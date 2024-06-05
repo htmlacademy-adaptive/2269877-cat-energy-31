@@ -1,0 +1,39 @@
+@use "../global/mixins.scss";
+@use "../global/variables.scss";
+
+footer {
+  background-color: $bg-secondary;
+}
+
+.footer__container {
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 65px;
+  }
+}
+
+.footer__logo {
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 19px;
+  justify-content: center;
+  text-decoration: none;
+  border-bottom: 1px solid $border-color-special;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
+  }
+}
+
+.footer__logo:hover {
+  opacity: 80%;
+}
+
+.footer__logo:active {
+  opacity: 60%;
+}
