@@ -1,6 +1,6 @@
 /* в этот файл добавляет скрипты*/
 window.addEventListener('DOMContentLoaded', () => {
-  document.body.classList.remove('pagebody--nojs');
+  document.body.classList.remove('page__body--nojs');
 
   const navMain = document.querySelector('.main-nav');
   if(navMain) {

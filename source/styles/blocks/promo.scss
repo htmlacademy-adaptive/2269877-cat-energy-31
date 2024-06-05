@@ -24,7 +24,7 @@
 .promo::before {
   content: '';
   display: block;
-  background-image: linear-gradient($primary-color, $primary-color), url("../../images/index-background.png");
+  background-image: linear-gradient(rgba($primary-color,0.85), rgba($primary-color,0.85)), url("../../images/index-background.png");
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
   position: absolute;
@@ -39,7 +39,7 @@
 
   @media (min-width: $desktop-width) {
     content:"";
-    background-image: linear-gradient($primary-color, $primary-color), url("../../images/index-background-desktop.png");
+    background-image: linear-gradient(rgba($primary-color,0.85), rgba($primary-color,0.85)), url("../../images/index-background-desktop.png");
     background-repeat: no-repeat, no-repeat;
     background-size: cover, cover;
     display: block;
