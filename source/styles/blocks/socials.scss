@@ -27,15 +27,15 @@
   background-color: $icon-color;
 }
 
-.social__link--vk::after {
+.socials__link--vk::after {
   mask-image: url("../../icons/stack.svg#vkontakte");
 }
 
-.social__link--youtube::after {
+.socials__link--youtube::after {
   mask-image: url("../../icons/stack.svg#youtube");
 }
 
-.social__link--telegram::after {
+.socials__link--telegram::after {
   mask-image: url("../../icons/stack.svg#telegram");
 }
 
