@@ -40,12 +40,6 @@
   box-shadow: -40px 0 $white, 40px 0 $white;
 }
 
-@media (min-width: $tablet-width) {
-  .title-h3--line:after {
-    margin-top: 13px;
-  }
-}
-
 .title-h3--line::after {
   content: "";
   z-index: -1;
@@ -59,5 +53,6 @@
 
   @media (min-width: $tablet-width) {
     top: 7px;
+    margin-top: 13px;
   }
 }

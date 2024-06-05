@@ -22,9 +22,9 @@
 }
 
 .promo::before {
-  content: '';
+  content: "";
   display: block;
-  background-image: linear-gradient(rgba($primary-color,0.85), rgba($primary-color,0.85)), url("../../images/index-background.png");
+  background-image: linear-gradient(rgba($primary-color, 0.85), rgba($primary-color, 0.85)), url("../../images/index-background.png");
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
   position: absolute;
@@ -38,8 +38,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    content:"";
-    background-image: linear-gradient(rgba($primary-color,0.85), rgba($primary-color,0.85)), url("../../images/index-background-desktop.png");
+    content: "";
+    background-image: linear-gradient(rgba($primary-color, 0.85), rgba($primary-color, 0.85)), url("../../images/index-background-desktop.png");
     background-repeat: no-repeat, no-repeat;
     background-size: cover, cover;
     display: block;
@@ -65,16 +65,21 @@
 }
 
 .promo__image {
+  margin-top: 14px;
+
   @media (min-width: $tablet-width) {
     position: relative;
     z-index: -1;
-    margin-top: -70px;
+    max-width: initial;
+    margin: -78px 0 0 -90px;
   }
+
   @media (min-width: $desktop-width) {
-    margin-top: 0;
     position: absolute;
     top: 80px;
     transform: translate(-204px, -64px);
+    max-width: initial;
+    margin: 0;
   }
 }
 
@@ -108,20 +113,6 @@
     text-align: left;
     font-size: 20px;
     line-height: 11px;
-  }
-}
-
-.promo__image {
-  margin-top: 14px;
-
-  @media (min-width: $tablet-width) {
-    max-width: initial;
-    margin: -78px 0 0 -90px;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: initial;
-    margin: 0;
   }
 }
 

@@ -41,21 +41,3 @@
     flex-wrap: wrap;
   }
 }
-
-.catalog__button {
-  @media (min-width: $tablet-width) {
-    min-width: 250px;
-    min-height: 40px;
-    margin: 32px 0 0;
-  }
-
-  .product-card & {
-    margin-top: -19px;
-    grid-area: footer;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-width: 169px;
-    margin: 12px 0 0;
-  }
-}

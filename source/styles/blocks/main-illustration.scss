@@ -9,10 +9,12 @@
 
   @media (min-width: $tablet-width) {
     background-color: $white;
+    background-image: linear-gradient($white 0 56%, $bg-secondary 136px 100%);
   }
 
   @media (min-width: $desktop-width) {
     background-color: $bg-color-accent;
+    background-image: linear-gradient($white 0 24%, $bg-secondary 136px 100%);
   }
 }
 
@@ -145,9 +147,8 @@
 
   @media (min-width: $tablet-width) {
     text-align: end;
+    flex-wrap: wrap;
     flex-direction: column;
-    //flex-wrap: wrap;
-    flex-flow: row wrap;
     gap: 10px;
     margin: 0;
     padding-top: 20px;
@@ -186,18 +187,18 @@
   }
 }
 
-.slider__image {
+.main-illustration__image {
   object-fit: cover;
   width: 100%;
   height: 100%;
   display: block;
 }
 
-.slider__image--state-before {
+.main-illustration__image--state-before {
   object-position: left;
 }
 
-.slider__image--state-after {
+.main-illustration__image--state-after {
   object-position: right;
 }
 

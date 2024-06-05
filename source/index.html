@@ -4,14 +4,12 @@
   <meta charset="UTF-8">
   <title>Кэт Энерджи</title>
   <meta content="width=device-width,initial-scale=1" name="viewport">
-  <link href="styles/styles.scss" rel="stylesheet">
   <link href="styles/styles.css" rel="stylesheet">
   <link as="font" crossorigin="anonymous" href="fonts/lato/Lato-Regular.woff2" rel="preload" type="font/woff2">
   <link as="font" crossorigin="anonymous" href="fonts/oswald/oswaldregular.woff2" rel="preload" type="font/woff2">
   <link href="favicon.ico" rel="icon"><!-- 32×32 -->
   <link href="favicons/icon.svg" rel="icon" type="image/svg+xml">
   <link href="favicons/180.png" rel="apple-touch-icon"><!-- 180×180 -->
-  <link href="vendor/normalize.css" rel="stylesheet">
   <script defer src="scripts/index.js"></script>
 </head>
 <body class="page__body page__body--nojs">
@@ -23,9 +21,9 @@
                 width="70">
         <source height="50" media="(min-width: 768px)" srcset="images/icons/logotype-tablet.svg" type="image/svg+xml"
                 width="60">
-        <img  class="header__logo-image" alt="Кот Энерджи." height="38" src="images/icons/logo-mobile.svg" width="33">
+        <img class="header__logo-image" alt="Кот Энерджи." src="images/icons/logo-mobile.svg" width="33" height="38">
       </picture>
-      <img class="header__logo-text" alt="Кот Энерджи."  height="18" src="images/icons/logo-text.svg" width="101">
+      <img class="header__logo-text" alt="Кот Энерджи."  src="images/icons/logo-text.svg" width="101" height="18">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -52,7 +50,7 @@
   </div>
 </header>
 <main class="main-container">
-  <section class="promo promo__img-overlay">
+  <section class="promo">
     <div class="promo__container container">
       <div class="promo__content">
         <h1 class="promo__title title-h1">Функциональное<br>питание для котов.</h1>
@@ -71,8 +69,7 @@
           <source height="609" media="(min-width: 768px)"
                   srcset="images/hero-product-tablet@1x.png 1x, images/hero-product-tablet@2x.png 2x" type="image/png"
                   width="709">
-          <img class="promo__image" alt="Баночка с питанием Кэт энерджи" height="270"
-               src="images/hero-product-mobile@1x.png" srcset="images/hero-product-mobile@2x.png 2x" width="280">
+          <img class="promo__image" alt="Баночка с питанием Кэт энерджи" src="images/hero-product-mobile@1x.png" srcset="images/hero-product-mobile@2x.png 2x" width="280" height="270">
         </picture>
       </div>
     </div>
@@ -117,12 +114,12 @@
       </li>
     </ul>
   </section>
-  <section class="main-illustration example">
+  <section class="main-illustration">
     <div class="main-illustration__container container">
-      <p class="main-illustration__title title-h2">Живой пример</p>
+      <h2 class="main-illustration__title title-h2">Живой пример</h2>
       <p class="main-illustration__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
         Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
-        спит по 16 часов в день. </p>
+        спит по 16 часов в день.</p>
       <div class="main-illustration__row">
         <div class="main-illustration__label">
           <p class="main-illustration__label-number"><span>5 кг</span></p>
@@ -143,9 +140,7 @@
           <source height="512" media="(min-width: 768px)"
                   srcset="images/cat-tablet-pc-before@1x.png 1x, images/cat-tablet-pc-before@2x.png 2x" type="image/png"
                   width="560">
-          <img class="main-illustration__image slider__image slider__image--state-before" alt="Кот с лишним весом"
-               height="256" src="images/cat-mobile-before@1x.png"
-               srcset="images/cat-mobile-before@2x.png 2x" width="280">
+          <img class="main-illustration__image main-illustration__image--state-before" alt="Кот с лишним весом" src="images/cat-mobile-before@1x.png" srcset="images/cat-mobile-before@2x.png 2x" width="280" height="256">
         </picture>
         <picture>
           <source height="512" media="(min-width: 768px)"
@@ -154,9 +149,7 @@
           <source height="512" media="(min-width: 768px)"
                   srcset="images/cat-tablet-pc-after@1x.png 1x, images/cat-tablet-pc-after@2x.png 2x" type="image/png"
                   width="560">
-          <img class="main-illustration__image slider__image slider__image--state-after" alt="Кот с нормальным весом"
-               height="256" src="images/cat-mobile-after@1x.png" srcset="images/cat-mobile-after@2x.png 2x"
-               width="280">
+          <img class="main-illustration__image main-illustration__image--state-after" alt="Кот с нормальным весом" src="images/cat-mobile-after@1x.png" srcset="images/cat-mobile-after@2x.png 2x" width="280" height="256">
         </picture>
         <button class="main-illustration__button" type="button">
           <span class="visually-hidden">Передвинуть полосу слайдера</span>
@@ -165,6 +158,7 @@
     </div>
   </section>
   <section class="contacts">
+    <h2 class="visually-hidden">Контакты</h2>
     <div class="container">
       <div class="contacts__content">
         <p class="contacts__text">Приглашаем<br> к сотрудничеству дилеров!</p>
@@ -187,17 +181,11 @@
           <source height="400" media="(min-width: 768px)"
                   srcset="images/location-tablet.png 1x, images/location-mobile@2x.png 2x" type="image/png"
                   width="768">
-          <img class="contacts__map--img" alt="Карта города для нахождения адреса Кэт энерджи"
-                height="362"
-               src="images/location-mobile.png"
-               srcset="images/location-mobile@2x.png 2x" width="320">
+          <img class="contacts__map--img" alt="Карта города для нахождения адреса Кэт энерджи" src="images/location-mobile.png" srcset="images/location-mobile@2x.png 2x" width="320" height="362">
         </picture>
       </noscript>
-      <iframe
-        allowfullscreen=""
-        height="362" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1996.7929883483553!2d30.3172265!3d59.9687573!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sus!4v1716360650734!5m2!1sru!2sus"
-        style="border:0;" title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"
-        width="320"></iframe>
+      <iframe allowfullscreen="" height="362" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1996.7929883483553!2d30.3172265!3d59.9687573!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sus!4v1716360650734!5m2!1sru!2sus" style="border:0;" title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург" width="320"></iframe>
     </div>
   </section>
 </main>
@@ -208,19 +196,15 @@
     </a>
     <ul class="footer__socials socials">
       <li class="socials__item">
-        <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy" rel="noreferrer noopener"
-           target="_blank"></a>
-        <span class="visually-hidden">Мы в Вконтакте</span>
+        <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy" rel="noreferrer noopener" target="_blank">
+          <span class="visually-hidden">Мы в Вконтакте</span>
+        </a>
       </li>
       <li class="socials__item">
-        <a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
-           rel="noreferrer noopener" target="_blank"></a>
-        <span class="visually-hidden">Мы в Ютубе</span>
+        <a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru" rel="noreferrer noopener" target="_blank"><span class="visually-hidden">Мы в Ютубе</span></a>
       </li>
       <li class="socials__item">
-        <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy"
-           rel="noreferrer noopener" target="_blank"></a>
-        <span class="visually-hidden">Мы в Телеграме</span>
+        <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy" rel="noreferrer noopener" target="_blank"><span class="visually-hidden">Мы в Телеграме</span></a>
       </li>
     </ul>
     <a class="developers" href="https://htmlacademy.ru" rel="noreferrer noopener" target="_blank">
