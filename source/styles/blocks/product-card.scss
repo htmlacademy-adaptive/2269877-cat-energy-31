@@ -47,12 +47,12 @@
   }
 }
 
-.product--show-all {
+.product-card--more {
   display: inline-block;
   width: 100%;
 }
 
-.product--show-all::before {
+.product-card--more::before {
   display: block;
   content: "";
   width: 30px;
@@ -96,7 +96,7 @@
   }
 }
 
-.product-card__title--show-all {
+.product-card__title--more {
   text-align: center;
   margin-top: 28px;
 }
@@ -156,7 +156,7 @@
   margin: 0;
 }
 
-.product--show-all {
+.product-card--more {
   background-color: transparent;
   border: 2px solid $bg-secondary;
 }
