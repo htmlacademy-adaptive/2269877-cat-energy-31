@@ -39,11 +39,11 @@
   mask-image: url("../../icons/stack.svg#telegram");
 }
 
-.socials__link:hover:after {
+.socials__link:hover::after {
   opacity: 30%;
   background-color: $primary-color;
 }
 
-.socials__link:active:after {
+.socials__link:active::after {
   background-color: $primary-color;
 }
