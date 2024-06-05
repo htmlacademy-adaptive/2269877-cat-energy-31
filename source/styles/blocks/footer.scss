@@ -12,7 +12,6 @@ footer {
   }
 
   @media (min-width: $desktop-width) {
-    padding-top:0;
     padding: 65px;
   }
 }
@@ -32,9 +31,9 @@ footer {
 }
 
 .footer__logo:hover {
-  opacity: .8;
+  opacity: 80%;
 }
 
 .footer__logo:active {
-  opacity: .6;
+  opacity: 60%;
 }

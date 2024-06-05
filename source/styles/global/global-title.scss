@@ -10,6 +10,7 @@
     line-height: 60px;
   }
 }
+
 .title-h2{
   font-family: $font-title-second;
   font-size: 36px;
@@ -23,19 +24,20 @@
     line-height: 60px;
   }
 }
+
 .title-h3{
-  color: #000;
+  color: $black;
   text-align: left;
-  background: #ffffff;
+  background: $bg-color-basic;
   width: fit-content;
   font-family: $font-title-second;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
   position: relative;
-  box-shadow: -40px 0 #fff, 40px 0 #fff;
+  box-shadow: -40px 0 #ffffff, 40px 0 #ffffff;;
 }
-@media (width >= 768px) {
+@media (min-width:$tablet-width) {
   .title-h3--line:after {
     margin-top: 13px;
   }
@@ -43,13 +45,13 @@
 .title-h3--line::after {
   content: "";
   z-index: -1;
-  background-color: #68b738;
+  background-color: $primary-color;
   width: 100vw;
   height: 2px;
   position: absolute;
   top: 14px;
   right: 0;
-  box-shadow: 100vw 0 #68b738;
+  box-shadow: 100vw 0 $primary-color;
 
   @media (min-width:$tablet-width) {
     top: 7px;
