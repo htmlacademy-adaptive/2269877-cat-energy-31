@@ -9,17 +9,19 @@
   text-decoration: none;
   line-height: 20px;
   text-align: center;
-  padding: 10px 20px;
+  padding: 9px 20px;
   cursor: pointer;
   border: 0;
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 26px;
   }
 
   &--lg {
     display: block;
+    font-size: 16px;
+    padding: 10px 26px;
   }
 
   &--secondary {

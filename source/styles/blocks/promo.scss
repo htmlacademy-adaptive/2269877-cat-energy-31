@@ -24,14 +24,19 @@
 .promo::before {
   content: "";
   display: block;
-  background-image: linear-gradient(rgba($primary-color, 0.85), rgba($primary-color, 0.85)), url("../../images/index-background.png");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index-background@1x.png");
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
+  background-color: $primary-color;
   position: absolute;
   z-index: -1;
   width: 100vw;
   height: 302px;
   top: 2px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index-background@2x.png");
+  }
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -39,7 +44,7 @@
 
   @media (min-width: $desktop-width) {
     content: "";
-    background-image: linear-gradient(rgba($primary-color, 0.85), rgba($primary-color, 0.85)), url("../../images/index-background-desktop.png");
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index-background-desktop@1x.png");
     background-repeat: no-repeat, no-repeat;
     background-size: cover, cover;
     display: block;
@@ -47,6 +52,10 @@
     height: 716px;
     top: -150px;
     right: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index-background-desktop@2x.png");
+    }
   }
 }
 
@@ -88,9 +97,10 @@
   font-size: 36px;
   line-height: 36px;
   text-align: center;
+  margin-top: 27px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 4px;
+    padding-top: 30px;
     color: $black;
     font-size: 60px;
     line-height: 60px;
@@ -98,7 +108,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 49px;
+    padding-top: 71px;
   }
 }
 
@@ -107,12 +117,19 @@
   line-height: 14px;
   text-align: center;
   text-transform: uppercase;
-  margin-top: -5px;
+  margin-top: -6px;
 
   @media (min-width: $tablet-width) {
+    margin-top: -5px;
     text-align: left;
     font-size: 20px;
     line-height: 11px;
+  }
+
+  @media (min-width: $tablet-width) {
+    line-height: 20px;
+    max-width: 493px;
+    margin-top: -14px;
   }
 }
 
@@ -122,7 +139,9 @@
 
   @media (min-width: $tablet-width) {
     max-width: 244px;
-    margin-top: 38px;
     order: 0;
+    margin-top: 31px;
+    font-size: 20px;
+    padding: 18px 26px;
   }
 }

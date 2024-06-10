@@ -2,43 +2,94 @@
 @use "../global/variables.scss";
 
 .additional-card {
-  border-top: 1px solid $border-color-primary;
+  border-bottom: 1px solid $border-color-primary;
+  padding: 15px 0 18px;
 
   @media (min-width: $tablet-width) {
+    border: 1px solid $border-color-primary;
     display: grid;
     grid-template-columns: 1fr max-content;
-    border-left: 1px solid $border-color-primary;
-    border-right: 1px solid $border-color-primary;
-    padding: 26px 37px 28px;
+    padding: 25px 37px 28px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(3, 1fr);
+    padding: 21px 0 3px;
     border-left: none;
     border-right: none;
   }
 }
 
 .additional-card__title {
+  font-family: $font-title-second;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: left;
+  color: $font-color-secondary;
+  text-transform: uppercase;
+  margin: 0 0 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   @media (min-width: $desktop-width) {
+    height: 20px;
     margin-bottom: 25px;
   }
 }
 
 .additional-card__description {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -18px;
+
   @media (min-width: $tablet-width) {
-    gap: 50px;
+    padding-top: 5px;
+    gap: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 0;
+  }
+}
+
+.additional-card__term,
+.additional-card__definition {
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: $font-color-primary;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.additional-card__term {
+  @media (min-width: $desktop-width) {
+    padding: 0 27px;
+  }
+}
+
+.additional-card__definition {
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
 .additional-card__button {
+  margin: 2px auto 0;
   grid-area: 2/1/3/3;
   width: 100%;
-  margin: 0;
 
   @media (min-width: $desktop-width) {
     grid-area: auto;
+    max-width: 244px;
+    margin: -24px 0 0 54px;
   }
 }

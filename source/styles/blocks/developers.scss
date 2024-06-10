@@ -25,9 +25,10 @@
 
 .developers__title::after {
   display: block;
+  margin-top: -8px;
   content: "";
   width: 27px;
-  height: 34px;
+  height: 35px;
   mask-image: url("../../icons/stack.svg#academy-logo");
   mask-position: center;
   mask-repeat: no-repeat;
@@ -38,10 +39,11 @@
   }
 }
 
-.developers__title::after:hover {
+.developers__title:hover::after {
   background-color: $primary-color;
 }
 
-.developers__title::after:active {
-  background-color: $primary-color, 0.3;
+.developers:active,
+.developers__title:active::after {
+  opacity: 60%;
 }
