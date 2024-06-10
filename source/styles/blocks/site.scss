@@ -1,0 +1,25 @@
+@use "../global/mixins.scss";
+@use "../global/variables.scss";
+
+.site-logo {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  padding-top: 13px;
+  padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 2px;
+    padding-bottom: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    .site-logo:hover {
+      opacity: 80%;
+    }
+
+    .site-logo:active {
+      opacity: 80%;
+    }
+  }
+}

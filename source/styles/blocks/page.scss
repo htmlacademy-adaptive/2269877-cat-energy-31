@@ -9,11 +9,12 @@
 
     .main-nav {
       width: 100vw;
-      margin-left: -20px;
+      //margin-left: -20px;
     }
 
     .main-nav__wrapper {
       position: relative;
+      display: block;
     }
 
     .main-nav__toggle::before {

@@ -3,7 +3,7 @@
 
 .benefits__title {
   margin: 0;
-  padding: 9px 0;
+  padding: 3px 0;
   font-family: $font-title-second;
   font-size: 36px;
   line-height: 40px;
@@ -52,10 +52,13 @@
 
   @media (min-width: $tablet-width) {
     max-width: 250px;
-    max-height: 280px;
     display: grid;
     gap: 30px;
     position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 
@@ -70,6 +73,10 @@
     max-width: 245px;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 29px;
   }
 }
 
@@ -132,6 +139,6 @@
   }
 
   .benefits__item:not(:nth-last-child(-n+2)) {
-    margin-bottom: 37px;
+    margin-bottom: 34px;
   }
 }

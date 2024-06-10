@@ -1,0 +1,17 @@
+@use "mixins";
+@use "variables";
+
+.title-h2 {
+  font-family: $font-title-second;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  color: $black;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}

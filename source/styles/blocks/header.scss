@@ -8,8 +8,6 @@
   position: relative;
   z-index: 1;
   align-items: center;
-  padding-top: 13px;
-  padding-bottom: 14px;
   border-bottom: 1px solid #e6e6e6;
 
   @media (min-width: $tablet-width) {
@@ -17,21 +15,10 @@
     padding-right: 37px;
     border: 0;
   }
-}
-
-.site-logo {
-  align-items: center;
-  display: flex;
-  flex-grow: 1;
 
   @media (min-width: $desktop-width) {
-    .site-logo:hover {
-      opacity: 80%;
-    }
-
-    .site-logo:active {
-      opacity: 80%;
-    }
+    padding-top: 34px;
+    padding-right: 35px;
   }
 }
 
@@ -57,7 +44,7 @@
 }
 
 .header__logo-text {
-  height: 18px;
+  height: 19px;
   width: 101px;
   align-items: center;
   margin: 0 auto;
