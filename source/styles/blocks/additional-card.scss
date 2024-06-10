@@ -3,13 +3,13 @@
 
 .additional-card {
   border-bottom: 1px solid $border-color-primary;
-  padding: 15px 0 18px;
+  padding: 14px 0 19px;
 
   @media (min-width: $tablet-width) {
     border: 1px solid $border-color-primary;
     display: grid;
     grid-template-columns: 1fr max-content;
-    padding: 25px 37px 28px;
+    padding: 32px 37px 20px;
   }
 
   @media (min-width: $desktop-width) {

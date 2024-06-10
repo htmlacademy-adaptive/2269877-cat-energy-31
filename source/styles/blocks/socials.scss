@@ -12,8 +12,14 @@
   border-bottom: 1px solid $border-color-special;
 
   @media (min-width: $tablet-width) {
+    padding-left: 35px;
     border: none;
     align-self: center;
+    padding-top: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 16px;
   }
 }
 

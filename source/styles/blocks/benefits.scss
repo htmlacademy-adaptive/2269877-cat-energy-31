@@ -2,8 +2,7 @@
 @use "../global/variables.scss";
 
 .benefits__title {
-  margin: 0;
-  padding: 3px 0;
+  margin-top: -3px;
   font-family: $font-title-second;
   font-size: 36px;
   line-height: 40px;
@@ -18,19 +17,19 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 52px 0;
+    padding: 37px 0;
   }
 }
 
 .benefits__list {
   padding: 0;
-  margin-top: 32px;
+  margin-top: -15px;
   margin-bottom: 48px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 250px);
-    gap: 96px 133px;
+    gap: 98px 133px;
     justify-content: flex-start;
     margin-bottom: 47px;
   }
@@ -40,7 +39,7 @@
     flex-wrap: wrap;
     gap: 30px;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: -17px;
   }
 }
 

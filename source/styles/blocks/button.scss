@@ -18,10 +18,22 @@
     line-height: 26px;
   }
 
+  ///dybvfybt!
+  @media (min-width: $desktop-width) {
+    padding: 7px 16px;
+    margin: 4px 0 0
+  }
+
   &--lg {
     display: block;
     font-size: 16px;
     padding: 10px 26px;
+
+    @media (min-width: $tablet-width) {
+      padding: 17px 9px;
+      font-size: 16px;
+      line-height: 12px;
+    }
   }
 
   &--secondary {

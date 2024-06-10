@@ -65,13 +65,13 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-
     border: none;
     grid-area: 2 / 1 / 3 / 2;
     max-width: 340px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 9px;
     grid-area: 2 / 1 / 3 / 3;
     min-width: 480px;
   }
@@ -85,7 +85,7 @@
   background-color: $bg-secondary;
   margin-bottom: 21px;
   min-height: 266px;
-  padding: 21px 19px 22px 20px;
+  padding: 21px 19px 24px 20px;
   column-gap: 20px;
 
   @media (min-width: $tablet-width) {
@@ -106,7 +106,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 20px;
+    padding: 6px 29px 72px 52px;
     margin-bottom: 0;
 
     .categories__item-title {
@@ -116,17 +116,16 @@
 }
 
 .categories__item--pro {
+  column-gap: 12px;
+
   @media (min-width: $tablet-width) {
-    padding: 68px 29px 53px 52px;
+    column-gap: 19px;
+    padding: 71px 29px 57px 52px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 35px;
-
-    .categories__description,
-    .categories__link {
-      padding-left: 15px;
-    }
+    padding: 58px 36px 78px 52px;
+    column-gap: 46px;
   }
 }
 
@@ -155,7 +154,7 @@
     width: 200px;
     height: 211px;
     background-size: 200px 211px;
-    margin: -16px 0 0 34px;
+    margin: -9px 0 0 33px;
   }
 
   @media (min-width: $desktop-width) {
@@ -175,6 +174,7 @@
   background-image: url("../../icons/stack.svg#cat-pro");
   background-repeat: no-repeat;
   background-size: 67px 50px;
+  margin-left: -7px;
 
   @media (min-width: $tablet-width) {
     width: 268px;
@@ -187,7 +187,8 @@
     width: 134px;
     height: 100px;
     background-size: 134px 100px;
-    margin-top: -25px;
+    margin-top: -38px;
+    margin-left: -15px;
   }
 }
 
@@ -222,17 +223,17 @@
 .categories__link::after {
   display: inline-flex;
   content: "";
-  width: 24px;
+  width: 32px;
   height: 12px;
   background-image: url("../../icons/stack.svg#icon-arrow");
   background-repeat: no-repeat;
-  background-size: 24px 12px;
+  background-size: 32px 12px;
 }
 
 .categories__link:hover::after {
-  width: 32px;
+  width: 34px;
   height: 12px;
-  background-size: 32px 12px;
+  background-size: 34px 12px;
 }
 
 .categories__link:active {

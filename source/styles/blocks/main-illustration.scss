@@ -9,7 +9,7 @@
 
   @media (min-width: $tablet-width) {
     background-color: $white;
-    background-image: linear-gradient($white 0 56%, $bg-secondary 136px 100%);
+    background-image: linear-gradient($white 0 59%, $bg-secondary 136px 100%);
   }
 
   @media (min-width: $desktop-width) {
@@ -79,7 +79,7 @@
 }
 
 .main-illustration__label {
-  margin-top: 10px;
+  margin-top: 7px;
   border: 1px solid $border-color-primary;
   border-radius: 1px;
   flex-direction: column;
@@ -90,6 +90,12 @@
   @media (min-width: $tablet-width) {
     width: 162px;
     height: 72px;
+  }
+}
+
+.main-illustration__label--left{
+  @media (min-width: $desktop-width) {
+    margin-left: -60px;
   }
 }
 
@@ -107,6 +113,7 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
+    padding-top: 2px;
   }
 }
 

@@ -5,7 +5,7 @@
   margin-top: 35px;
   background-color: $primary-color;
   min-width: 280px;
-  padding: 60px 43px 22px;
+  padding: 58px 43px 23px;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/offer-background-mobile.png");
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
@@ -15,14 +15,14 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 65px;
     display: flex;
     justify-content: space-between;
-    padding: 0;
     background-image: linear-gradient(to left, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/offer-background-tablet1.png");
     background-color: $primary-color;
     background-repeat: no-repeat, no-repeat;
     background-size: cover, cover;
+    margin-top: 75px;
+    padding: 0 0 0 5px;
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(to left, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/offer-background-tablet@2x.png");
