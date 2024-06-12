@@ -150,6 +150,8 @@
   line-height: 20px;
   font-family: $font-title-second;
   color: $black;
+  width: fit-content;
+  max-width: 350px;
 
   @media (min-width: $tablet-width) {
     text-align: end;
@@ -276,4 +278,10 @@
 
 .main-illustration__button:hover {
   background-color: $primary-color;
+}
+
+@media (max-width: $desktop-width) {
+  .main-illustration__price span:not(:last-of-type) {
+    margin-right: -13px;
+  }
 }

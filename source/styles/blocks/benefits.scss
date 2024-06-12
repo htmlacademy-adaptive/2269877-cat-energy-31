@@ -141,3 +141,9 @@
     margin-bottom: 34px;
   }
 }
+
+@media (max-width: $mobile-width-only) {
+  .benefits__text br{
+    display: none;
+  }
+}
