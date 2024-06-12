@@ -8,12 +8,12 @@
 .footer__container {
   @media (min-width: $tablet-width) {
     display: flex;
-    padding: 17px 30px;
+    padding: 9px 31px;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 42px 29px;
+    padding: 33px 29px;
   }
 }
 

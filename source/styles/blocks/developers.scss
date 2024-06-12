@@ -5,6 +5,10 @@
   text-decoration: none;
   padding: 20px 0;
 
+  @media (min-width: $tablet-width) {
+    padding: 24px 0;
+  }
+
   @media (min-width: $desktop-width) {
     padding: 0;
   }
@@ -17,6 +21,14 @@
   font-size: 16px;
   line-height: 20px;
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    padding: 29px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 37px 0;
+  }
 }
 
 .developers__title:active {

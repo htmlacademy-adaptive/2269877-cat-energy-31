@@ -7,9 +7,11 @@
   line-height: 36px;
   text-align: left;
   color: $black;
-  padding-bottom: 27px;
+  margin-top: 26px;
+  margin-bottom: 60px;
 
   @media (min-width: $tablet-width) {
+    margin-top: 49px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -32,16 +34,14 @@
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
-    gap: 141px 59px;
+    gap: 140px 59px;
     grid-template-columns: repeat(2, 1fr);
-    margin: 138px 0 22px;
+    margin: 165px 0 17px;
     display: grid;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    display: grid;
-    flex-wrap: wrap;
-    gap: 141px 81px;
+    gap: 146px 80px;
   }
 }

@@ -14,6 +14,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 9px;
+
     .site-logo:hover {
       opacity: 80%;
     }
