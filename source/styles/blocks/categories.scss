@@ -106,7 +106,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 6px 29px 70px 52px;
+    padding: 6px 29px 62px 52px;
     margin-bottom: 0;
 
     .categories__item-title {
@@ -114,7 +114,7 @@
     }
 
     .categories__description{
-      margin-top: 8px;
+      margin-top: 16px;
     }
   }
 }
@@ -128,7 +128,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 58px 36px 78px 52px;
+    padding: 58px 36px 61px 52px;
     column-gap: 46px;
 
     .categories__item-title {
@@ -136,7 +136,7 @@
     }
 
     .categories__description{
-      margin-top: -4px;
+      margin-top: -7px;
     }
   }
 }
@@ -229,6 +229,7 @@
   @media (min-width: $desktop-width) {
     grid-column: -1/1;
     padding: 0;
+    margin-top: 4px;
   }
 }
 

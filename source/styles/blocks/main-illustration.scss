@@ -79,7 +79,7 @@
 }
 
 .main-illustration__label {
-  margin-top: 10px;
+  margin-top: 9px;
   border: 1px solid $border-color-primary;
   border-radius: 1px;
   flex-direction: column;
@@ -283,5 +283,17 @@
 @media (max-width: $desktop-width) {
   .main-illustration__price span:not(:last-of-type) {
     margin-right: -13px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .main-illustration__price span:not(:last-of-type) {
+    margin-right: 2px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-illustration__price span:not(:last-of-type) {
+    margin-right: 5px;
   }
 }

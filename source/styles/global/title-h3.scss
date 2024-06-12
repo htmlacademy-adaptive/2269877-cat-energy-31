@@ -21,12 +21,16 @@
   width: 100vw;
   height: 2px;
   position: absolute;
-  top: 14px;
+  top: 9px;
   right: 0;
   box-shadow: 100vw 0 $primary-color;
 
   @media (min-width: $tablet-width) {
-    top: 7px;
+    top: 6px;
     margin-top: 6px;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 12px;
   }
 }
