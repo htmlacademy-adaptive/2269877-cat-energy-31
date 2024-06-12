@@ -4,7 +4,7 @@
 .subscribe {
   overflow: hidden;
   padding-top: 25px;
-  padding-bottom: 40px;
+  padding-bottom: 43px;
 
   @media (min-width: $tablet-width) {
     padding-top: 80px;
@@ -44,6 +44,7 @@
   text-align: center;
   color: $black;
   padding-top: 13px;
+  padding-bottom: 3px;
 
   @media (min-width: $tablet-width) {
     max-width: 632px;
@@ -58,13 +59,13 @@
 }
 
 .subscribe__form {
-  padding-bottom: 6px;
+  padding-bottom: 3px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: center;
     margin: 0 38px;
-    padding-top: 3px;
+    padding-top: 0;
     padding-bottom: 0;
   }
 
@@ -88,8 +89,8 @@
   text-transform: uppercase;
   border: 1px solid $input-border-color;
   min-width: 280px;
-  margin-bottom: 21px;
-  padding: 16px;
+  margin-bottom: 20px;
+  padding: 15px;
 
   @media (min-width: $tablet-width) {
     padding: 13px;
