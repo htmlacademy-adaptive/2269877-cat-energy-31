@@ -21,6 +21,10 @@
   font-size: 16px;
   line-height: 20px;
   display: flex;
+
+  @media (min-width: $desktop-width) {
+    padding: 32px 0;
+  }
 }
 
 .developers__title:active {

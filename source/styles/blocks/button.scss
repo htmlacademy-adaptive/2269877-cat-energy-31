@@ -10,6 +10,7 @@
   line-height: 20px;
   text-align: center;
   padding: 9px 20px;
+  min-height: 40px;
   cursor: pointer;
   border: 0;
 
@@ -21,7 +22,6 @@
   ///dybvfybt!
   @media (min-width: $desktop-width) {
     padding: 7px 16px;
-    margin: 4px 0 0
   }
 
   &--lg {

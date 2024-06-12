@@ -4,7 +4,6 @@
 .special-offer {
   margin-top: 35px;
   background-color: $primary-color;
-  min-width: 280px;
   padding: 58px 43px 23px;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/offer-background-mobile.png");
   background-repeat: no-repeat, no-repeat;
@@ -31,7 +30,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    padding: 59px 43px 60px;
+    padding: 55px 25px 41px;
     align-items: center;
     flex-direction: column;
     background-image: linear-gradient(to left, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/offer-background-pc.png");
